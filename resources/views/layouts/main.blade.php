@@ -40,9 +40,9 @@
     <meta property="og:site_name" content="Guía Celíaca"/>
     <meta property="og:description" content="Locales y vendedores de comida y productos para celíacos en Argentina.
     Guía práctica y simple para poder comparar precios y productos, y buscar locales cercanos a sus domicilios"/>
-    <meta property="og:image" content="https://guiaceliaca.com.ar/images/img-logo.png"/>
+    <meta property="og:image" content="@yield('https://guiaceliaca.com.ar/images/img-logo.png')"/>
 
-
+    {{--<title>Guía Celíaca | @yield('title','Comercios celíacos') {{ date('Y') }}</title>--}}
     <!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon"/>
     <link rel="apple-touch-icon" href="{{ asset('style/images/favicon/apple-touch-icon.png') }}"/>
