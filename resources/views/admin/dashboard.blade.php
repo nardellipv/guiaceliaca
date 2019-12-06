@@ -1,0 +1,7 @@
+@extends('layouts.admin')
+
+@section('content')
+    @include('admin.parts._widget')
+    @include('admin.parts._sendNotify')
+    @include('admin.parts._users')
+@endsection

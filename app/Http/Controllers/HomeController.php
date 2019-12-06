@@ -1,0 +1,58 @@
+<?php
+
+namespace guiaceliaca\Http\Controllers;
+
+use guiaceliaca\Blog;
+use guiaceliaca\CharacteristicCommerces;
+use guiaceliaca\Characteristics;
+use guiaceliaca\Commerce;
+use guiaceliaca\Payment;
+use guiaceliaca\Province;
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
+{
+    public function index()
+    {
+        $commercesLastRegister = Commerce::with(['user', 'province'])
+            ->orderBy('created_at', 'DESC')
+            ->paginate(6);
+
+        /*$commercesPro = Commerce::with(['user', 'province'])
+            ->where('type', '!=', 'FREE')
+            ->get();*/
+
+        $lastNews = Blog::orderBy('created_at', 'DESC')
+            ->where('status', 'ACTIVE')
+            ->take(3)
+            ->get();
+
+        $ratingVote = Commerce::orderBy('votes_positive', 'DESC')
+            ->first();
+
+        $ratingVisit = Commerce::orderBy('visit', 'DESC')
+            ->first();
+
+        $provinces = Province::all();
+
+        $characteristics = Characteristics::all();
+
+        $payments = Payment::all();
+
+        return view('web.index', compact('commercesLastRegister', 'lastNews', 'provinces',
+            'characteristics', 'payments', 'ratingVisit', 'ratingVote', 'device'));
+    }
+
+    public function searchCommerce(Request $request)
+    {
+
+//        dd($request->all());
+        $searching = Commerce::with(['user'])
+//            ->orWhere('name', 'LIKE', '%' . $request->keywords . '%')
+            ->orWhere('name', 'LIKE', '%' . $request->keywords . '%')
+            ->orWhere('province_id', $request->provinices)
+            ->get();
+
+        return view('web.parts.searching._searchCommerce', compact('searching'));
+    }
+}

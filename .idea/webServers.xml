@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9656768c-16d6-4698-8fc3-b45ef24af08b" name="guiaceliaca" url="http://ftp.guiaceliaca.com.ar">
+        <fileTransfer host="ftp.guiaceliaca.com.ar" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
