@@ -7,9 +7,7 @@
 @section('og:url', 'https://guiaceliaca.com.ar/' . $commerce->slug)
 @section('og:title', $commerce->name)
 @section('og:description', $commerce->about)
-@section('og:image', 'https://guiaceliaca.com.ar/users/images/31/comercio/358x250-' .$commerce->logo)
-<meta property="og:video:width" content="400" />
-<meta property="og:video:height" content="300" />
+@section('og:image', 'https://guiaceliaca.com.ar/users/images/' . $commerce->user->id . '/comercio/358x250-'. $commerce->logo)
 
 @section('style')
     <link rel="stylesheet" href="{{ asset('style/css/vendor/fotorama/fotorama.css') }}">
