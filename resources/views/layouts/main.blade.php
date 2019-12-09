@@ -34,13 +34,15 @@
     <link rel="stylesheet" href="{{ asset('style/css/media-query.css') }}">
     <!-- Media Query -->
 
-    <meta property="og:url" content="https://www.guiaceliaca.com.ar"/>
+    <meta property="og:url" content="@yield('og:url', 'https://guiaceliaca.com.ar')"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Comunidad de celiacos en toda la argentina."/>
+    <meta property="og:title" content="@yield('og:title', 'Comunidad de celiacos en toda la argentina.')"/>
     <meta property="og:site_name" content="Guía Celíaca"/>
-    <meta property="og:description" content="Locales y vendedores de comida y productos para celíacos en Argentina.
-    Guía práctica y simple para poder comparar precios y productos, y buscar locales cercanos a sus domicilios"/>
-    <meta property="og:image" content="https://guiaceliaca.com.ar/images/img-logo.png"/>
+    <meta property="og:description" content="@yield('og:description', 'Locales y vendedores de comida y productos para celíacos en Argentina.
+    Guía práctica y simple para poder comparar precios y productos, y buscar locales cercanos a sus domicilios')"/>
+    <meta property="og:image" content="@yield('og:image', 'https://guiaceliaca.com.ar/images/img-logo.png')"/>
+    <meta property="fb:app_id" content="507631946630340" />
+    <meta property=“fb:admins" content = “109559280472432″ />
 
 
     <!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
