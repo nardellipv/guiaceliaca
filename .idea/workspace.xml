@@ -5,47 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8c23633-b98e-44b8-9692-806e8ad8cf3f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/web/parts/commerce/_productList.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommerceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommerceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/11/comercio/165x165-11-descarga.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/11/comercio/260x160-11-descarga.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/11/comercio/260x260-11-descarga.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/11/comercio/284x386-11-descarga.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/11/comercio/358x250-11-descarga.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/12/comercio/165x165-12-1540660896.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/12/comercio/260x160-12-1540660896.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/12/comercio/260x260-12-1540660896.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/12/comercio/284x386-12-1540660896.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/12/comercio/358x250-12-1540660896.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/19/comercio/165x165-19-1541623697.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/19/comercio/260x160-19-1541623697.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/19/comercio/260x260-19-1541623697.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/19/comercio/284x386-19-1541623697.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/19/comercio/358x250-19-1541623697.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/20/comercio/165x165-20-1543975077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/20/comercio/260x160-20-1543975077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/20/comercio/260x260-20-1543975077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/20/comercio/284x386-20-1543975077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/20/comercio/358x250-20-1543975077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/25/comercio/165x165-25-WP_20131210_006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/25/comercio/260x160-25-WP_20131210_006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/25/comercio/260x260-25-WP_20131210_006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/25/comercio/284x386-25-WP_20131210_006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/25/comercio/358x250-25-WP_20131210_006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/26/comercio/165x165-26-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/26/comercio/260x160-26-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/26/comercio/260x260-26-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/26/comercio/284x386-26-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/26/comercio/358x250-26-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/8/comercio/165x165-8-1541207677.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/8/comercio/260x160-8-1541207677.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/8/comercio/260x260-8-1541207677.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/8/comercio/284x386-8-1541207677.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/users/images/8/comercio/358x250-8-1541207677.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web/parts/commerce/_dataCommerce.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web/parts/commerce/_dataCommerce.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web/parts/recipe/_listRecipes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web/parts/recipe/_listRecipes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,50 +51,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <file leaf-file-name="main.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3105">
-              <caret line="135" column="12" selection-start-line="135" selection-start-column="12" selection-end-line="135" selection-end-column="29" />
+            <state relative-caret-position="460">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_dataCommerce.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/web/parts/commerce/_dataCommerce.blade.php">
+      <file leaf-file-name="_listRecipes.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/web/parts/recipe/_listRecipes.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommerceController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CommerceController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="95" column="55" selection-start-line="95" selection-start-column="55" selection-end-line="95" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_productList.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/web/parts/commerce/_productList.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="368">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding>
-                <element signature="e#79#102#0#HTML" expanded="true" />
+                <element signature="e#0#3905#0#Blade" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Product.php">
+      <file leaf-file-name="_recipe.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="110">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -199,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/MailClientContact.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/MessageClientToCommerce.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/MailRespondCommerceToClient.blade.php" />
@@ -224,7 +167,6 @@
         <option value="$PROJECT_DIR$/resources/views/emails/mailNews.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/_Test.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/withoutPost.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/_slider.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/SearchRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/searching/_searchCommerce.blade.php" />
@@ -241,7 +183,6 @@
         <option value="$PROJECT_DIR$/resources/views/web/parts/_menu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/adminClient/profile/_accountCommerce.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/JobSiteController.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/commerce/_modalProducts.blade.php" />
@@ -250,6 +191,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/CommerceController.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/commerce/_productList.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/commerce/_dataCommerce.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/web/parts/recipe/_listRecipes.blade.php" />
       </list>
     </option>
   </component>
@@ -364,7 +308,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1869" />
     <option name="y" value="57" />
     <option name="width" value="1382" />
@@ -444,7 +388,7 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="parts" type="462c0819:PsiDirectoryNode" />
-              <item name="commerce" type="462c0819:PsiDirectoryNode" />
+              <item name="recipe" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -546,12 +490,12 @@
       <workItem from="1575027653794" duration="28000" />
       <workItem from="1575035477206" duration="3638000" />
       <workItem from="1576153427459" duration="15308000" />
-      <workItem from="1576239299122" duration="3341000" />
+      <workItem from="1576239299122" duration="5583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="297279000" />
+    <option name="totallyTimeSpent" value="299521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -563,7 +507,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1608" y="71" width="1616" height="916" extended-state="7" />
+    <frame x="-1608" y="71" width="1616" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17930591" />
@@ -660,27 +604,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/emails/withoutPost.blade.php" />
     <entry file="file://$PROJECT_DIR$/public/favicon.ico">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="44" lean-forward="true" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/recipe/_listRecipes.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/landing/_recentListed.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/RespondCommerceToClientMessage.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -854,13 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/web/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/web/parts/commerce/_modalProducts.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/web/parts/_contact.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -881,13 +797,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Category.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="42" column="107" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="107" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/web/parts/commerce/_dataCommerce.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -912,11 +821,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/web/parts/commerce/_productList.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="65">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding>
             <element signature="e#79#102#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/web/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/landing/_recentListed.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="95" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#4827#0#Blade" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/recipe/_listRecipes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#3905#0#Blade" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
         </state>
       </provider>
     </entry>

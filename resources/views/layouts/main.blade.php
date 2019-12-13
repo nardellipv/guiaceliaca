@@ -41,8 +41,8 @@
     <meta property="og:description" content="@yield('og:description', 'Locales y vendedores de comida y productos para celíacos en Argentina.
     Guía práctica y simple para poder comparar precios y productos, y buscar locales cercanos a sus domicilios')"/>
     <meta property="og:image" content="@yield('og:image', 'https://guiaceliaca.com.ar/images/img-logo.png')"/>
-    <meta property="fb:app_id" content="507631946630340" />
-    <meta property=“fb:admins" content = “109559280472432″ />
+    <meta property="fb:app_id" content="507631946630340"/>
+    <meta property=“fb:admins" content=“109559280472432″/>
 
 
     <!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->

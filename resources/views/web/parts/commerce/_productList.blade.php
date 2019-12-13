@@ -34,7 +34,7 @@
                                      class="img-responsive" width="50%">
                             </a>
                             <span class="address"><i class="fa fa-cutlery"></i> {{ $product->name }}</span>
-                            <span class="description">{{ $product->description }}</span>
+                            <span class="description">{!! $product->description !!}</span>
                             <dl class="detail">
                                 <dt class="status">Precio:</dt>
                                 <dd><span>${{ $product->price }}</span></dd>
