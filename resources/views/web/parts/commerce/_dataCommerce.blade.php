@@ -7,7 +7,9 @@
 @section('og:url', 'https://guiaceliaca.com.ar/' . $commerce->slug)
 @section('og:title', $commerce->name)
 @section('og:description', $commerce->about)
-@section('og:image', 'https://guiaceliaca.com.ar/users/images/' . $commerce->user->id . '/comercio/358x250-'. $commerce->logo)
+@if ($commerce->logo)
+    @section('og:image', 'https://guiaceliaca.com.ar/users/images/' . $commerce->user->id . '/comercio/358x250-'. $commerce->logo)
+@endif
 
 @section('style')
     <link rel="stylesheet" href="{{ asset('style/css/vendor/fotorama/fotorama.css') }}">
@@ -274,14 +276,17 @@
                                                     <img alt="{{ $product->photo }}"
                                                          src="{{ asset('users/images/' . $commerce->user->id . '/producto/100x100-'. $product->photo) }}">
                                                 @endif
+                                                <p>
                                                 {{ Str::limit($product->name, 15) }}
+                                                </p>
                                             </span>
                                             </div>
                                         @endforeach
                                     </div>
-                                    @if(count($products) > 6)
-                                        <button type="button" class="btn btn-warning">Ver listado de Productos</button>
-                                    @endif
+                                    {{--                                    @if(count($products) > 6)--}}
+                                    <a href="{{ route('list.productCommerce', $commerce->slug) }}" type="button"
+                                       class="btn btn-warning">Ver listado de Productos</a>
+                                    {{--@endif--}}
                                 </div>
                             @else
                                 <div class="details">
@@ -324,8 +329,6 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
                 @include('web.parts.commerce._asideCommerce')
             </div>

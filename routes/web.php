@@ -133,4 +133,5 @@ Route::get('/top-votes-commerces', 'JobSiteController@topVotesCommerces')->name(
 
 
 // comercio perfil
+Route::get('/productos/{slug}', 'CommerceController@listProduct')->name('list.productCommerce');
 Route::get('/{slug}', 'CommerceController@index')->name('name.commerce');

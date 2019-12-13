@@ -18,7 +18,7 @@ class CommerceController extends Controller
             ->first();
 
         Commerce::where('id', $commerce->id)
-            ->increment('visit',1);
+            ->increment('visit', 1);
 
         $visit = Commerce::sum('visit');
 
@@ -44,7 +44,7 @@ class CommerceController extends Controller
             ->paginate(5);
 
         Return view('web.parts.commerce._dataCommerce', compact('commerce', 'totalVisit',
-            'characteristics', 'payments', 'products','comments'));
+            'characteristics', 'payments', 'products', 'comments'));
     }
 
     public function positive($slug)
@@ -85,5 +85,18 @@ class CommerceController extends Controller
 
         Toastr::success('Muchas gracias por tu voto', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
         return back();
+    }
+
+    public function listProduct($slug)
+    {
+        $commerce = Commerce::with(['user'])
+            ->where('slug', $slug)
+            ->first();
+
+        $products = Product::with(['commerce','category'])
+            ->where('commerce_id', $commerce->id)
+            ->get();
+
+        return view('web.parts.commerce._productList', compact('products', 'commerce'));
     }
 }
