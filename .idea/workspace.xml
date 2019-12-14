@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8c23633-b98e-44b8-9692-806e8ad8cf3f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/celiacosargentina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/celiacosargentina.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web/parts/adminClient/profile/_asideProfile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web/parts/adminClient/profile/_asideProfile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,8 +56,8 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+            <state relative-caret-position="67">
+              <caret line="59" column="106" selection-start-line="59" selection-start-column="106" selection-end-line="59" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -287,10 +290,7 @@
       <path value="$PROJECT_DIR$/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
-      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
-      <path value="$PROJECT_DIR$/vendor/league/oauth1-client" />
-      <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
+      <path value="$PROJECT_DIR$/vendor/cybercog/laravel-love" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -517,7 +517,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309884000" />
+    <option name="totallyTimeSpent" value="310959000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -530,7 +530,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="71" width="1616" height="916" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.5072084" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32896462" />
@@ -538,9 +537,9 @@
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.47968546" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.5526992" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" x="-1578" y="289" width="1556" height="480" id="Terminal" order="9" weight="0.655527" />
+      <window_info active="true" anchor="bottom" x="-1578" y="289" width="1556" height="480" id="Terminal" order="9" visible="true" weight="0.655527" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.32969153" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49871466" visible="true" weight="0.22622108" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49871466" visible="true" weight="0.22622108" />
       <window_info anchor="right" id="Database" order="5" weight="0.32969153" />
       <window_info id="Structure" order="1" sideWeight="0.5012854" side_tool="true" weight="0.18123393" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -1105,8 +1104,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        <state relative-caret-position="67">
+          <caret line="59" column="106" selection-start-line="59" selection-start-column="106" selection-end-line="59" selection-end-column="106" />
         </state>
       </provider>
     </entry>
