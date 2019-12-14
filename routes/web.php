@@ -26,6 +26,10 @@ Route::get('/view', function() {
 
 Auth::routes();
 
+Route::get('/redirect', 'SocialAuthFacebookController@redirect');
+Route::get('/callback', 'SocialAuthFacebookController@callback');
+
+
 //web
 Route::get('/', 'HomeController@index')->name('home');
 
