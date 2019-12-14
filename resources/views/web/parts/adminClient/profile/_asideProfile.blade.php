@@ -17,8 +17,8 @@
             @if(Auth::user()->type == 'OWNER')
                 <p style="margin: 5% 25% -10% 25%;">Cuenta Comercio</p>
             @else
-                <a href="{{ route('create.accountCommerce') }}" type="button" class="btn btn-danger btn-xs"
-                   style="margin: 5% 20% -10% 20%;">Crear
+                <a href="{{ route('create.accountCommerce') }}" type="button" class="btn btn-danger btn-lg btn-block"
+                   >Crear
                     Cuenta Comercio</a>
             @endif
         </div>
