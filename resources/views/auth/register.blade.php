@@ -1,5 +1,10 @@
 @extends('layouts.main')
 
+@section('title', 'Registro en Guía Celíaca')
+
+@section('og:url', 'https://guiaceliaca.com.ar/register')
+@section('og:description', 'Registrate Gratis y ofrece tus productos sin TACC')
+
 @section('content')
     <section id="signin-page" style="margin-top: 7%">
 
