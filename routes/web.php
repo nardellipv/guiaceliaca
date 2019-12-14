@@ -130,6 +130,7 @@ Route::get('/contact-copy', 'JobSiteController@usersCopyNewsLetter')->name('jobC
 Route::get('/resume-client', 'JobSiteController@resumeClient')->name('jobResume.resumeClient');
 Route::get('/top-visit-commerces', 'JobSiteController@topVisitCommerces')->name('jobTop.visitCommerces');
 Route::get('/top-votes-commerces', 'JobSiteController@topVotesCommerces')->name('jobTop.votesCommerces');
+Route::get('/message-no-read', 'JobSiteController@messageNoRead')->name('jobMessage.messageNotRead');
 
 
 // comercio perfil

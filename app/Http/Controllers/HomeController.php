@@ -45,11 +45,8 @@ class HomeController extends Controller
 
     public function searchCommerce(Request $request)
     {
-
-//        dd($request->all());
         $searching = Commerce::with(['user'])
-//            ->orWhere('name', 'LIKE', '%' . $request->keywords . '%')
-            ->orWhere('name', 'LIKE', '%' . $request->keywords . '%')
+            ->orWhere('name', 'LIKE', "%{$request->keywords}%")
             ->orWhere('province_id', $request->provinices)
             ->get();
 

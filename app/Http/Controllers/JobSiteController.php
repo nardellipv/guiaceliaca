@@ -4,6 +4,7 @@ namespace guiaceliaca\Http\Controllers;
 
 use guiaceliaca\Blog;
 use guiaceliaca\Commerce;
+use guiaceliaca\Message;
 use guiaceliaca\NewsLetter;
 use guiaceliaca\User;
 use Illuminate\Support\Facades\Mail;
@@ -95,5 +96,24 @@ class JobSiteController extends Controller
             $msj->subject('Top Comercios');
             $msj->to($commerce->user->email, $commerce->user->name);
         });
+    }
+
+    public function messageNoRead()
+    {
+        $messages = Message::where('read', 'NO')
+            ->get();
+
+        foreach ($messages as $message) {
+            $commerce = Commerce::with(['user'])
+                ->where('id', $message->commerce_id)
+                ->first();
+
+
+            Mail::send('emails.MessageNoRead', ['commerce' => $commerce], function ($msj) use ($commerce) {
+                $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+                $msj->subject('Mensajes sin leer');
+                $msj->to($commerce->user->email, $commerce->user->name);
+            });
+        }
     }
 }

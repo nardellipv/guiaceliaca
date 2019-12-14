@@ -1,7 +1,7 @@
-<section id="recent-listed" data-parallax-speed="-0.3" class="hidden-xs" style="background: url({{ asset('style/images/parallax/featured.jpg') }})50% 32px / cover;">
+<section id="recent-listed" data-parallax-speed="-0.3" class="hidden-xs" style="background: url({{ asset('style/images/parallax/strawberry.jpg') }})50% 32px / cover;">
     <div class="section-detail">
         <h1 style="color: cornsilk;">Negocios Sin TACC Destacados</h1>
-        <h2 style="padding: 10px 110px 0px 110px; background-color: darkgoldenrod;">Felicitamos a <b>{{ $ratingVote->name }}</b> por ser el local con mayor cantidad de votos positivos y
+        <h2 style="padding: 10px 110px 0px 110px">Felicitamos a <b>{{ $ratingVote->name }}</b> por ser el local con mayor cantidad de votos positivos y
             a <b>{{ $ratingVisit->name }}</b> por tener la mayor cantidad de visitas.
             Estos locales se encuentran como destacados gracias a los usuarios finales que participan visitando y votando a cada
             local registrado.</h2>
