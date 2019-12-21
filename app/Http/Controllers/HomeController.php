@@ -27,7 +27,8 @@ class HomeController extends Controller
             ->take(3)
             ->get();
 
-        $ratingVote = Commerce::orderBy('votes_positive', 'DESC')
+        $ratingVote = Commerce::orderBy('votes_positive','desc')
+            ->whereRaw('(votes_positive*100)/(votes_positive + votes_negative)')
             ->first();
 
         $ratingVisit = Commerce::orderBy('visit', 'DESC')
