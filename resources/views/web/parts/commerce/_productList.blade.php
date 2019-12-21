@@ -78,4 +78,25 @@
 
     </section>
 
+    <!-- Marcado JSON-LD generado por el Asistente para el marcado de datos estructurados de Google. -->
+    <script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Product",
+  "name" : "$commerce->name",
+  "image" : "{{ 'https://guiaceliaca.com.ar/users/images/' . $product->commerce->user->id . '/producto/100x100-'. $product->photo}}",
+  "description" : "{!! $product->description !!}",
+  "brand" : {
+    "@type" : "Brand",
+    "name" : "{{ $product->name }}"
+  },
+  "offers" : {
+    "@type" : "Offer",
+    "url" : "{{ 'https://guiaceliaca.com.ar/productos/' . $commerce->slug }}",
+    "priceCurrency " : "$",
+    "price" : "{{ $product->price }}"
+  }
+}
+</script>
 @endsection
+

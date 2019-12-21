@@ -66,6 +66,9 @@
     </div>
 </section>
 
+{{--snipper--}}
+@include('external.snipperHome')
+
 @section('scrip')
     <script>
         $(document).ready(function () {
@@ -94,3 +97,5 @@
         });
     </script>
 @endsection
+
+

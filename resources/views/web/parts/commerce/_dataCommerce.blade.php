@@ -363,3 +363,29 @@
 
     </script>
 @endsection
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Restaurant",
+  "name" : "{{ $commerce->name }}",
+  @if ($commerce->logo)
+        "image" : "{{ 'https://guiaceliaca.com.ar/users/images/' . $commerce->user->id . '/comercio/358x250-'. $commerce->logo }}",
+  @else
+        "image" : "https://guiaceliaca.com.ar/images/img-logo.png",
+@endif
+    "telephone" : "{{ $commerce->phone }}",
+  "address" : {
+    "@type" : "PostalAddress",
+    "streetAddress" : "{{ $commerce->address }}",
+    "addressRegion" : "{{ $commerce->province->name }}"
+    },
+    "aggregateRating" : {
+      "@type" : "AggregateRating",
+      "ratingValue" : "Votos",
+      "bestRating" : "{{$commerce->votes_positive }}",
+      "ratingCount" : "{{$commerce->votes_positive + $commerce->votes_negative}}"
+    }
+  }
+
+</script>
