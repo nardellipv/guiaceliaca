@@ -298,7 +298,6 @@
                                 </div>
                             @endif
 
-                        <!-- 8. Maps -->
                             <div id="ubicacion" class="section-title line-style">
                                 <h3 class="title">Comentarios</h3>
                             </div>
@@ -327,6 +326,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -340,28 +340,6 @@
     <script src="{{ asset('style/script/vendor/noui-slider/nouislider.all.min.js') }}"></script>
     <script src="{{ asset('style/script/vendor/fotorama/fotorama.min.js') }}"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script>
-
-        function initialize() {
-            var mapOptions = {
-                zoom: 18,
-                center: new google.maps.LatLng(-33.890542, 151.274856)
-            }
-            var map = new google.maps.Map(document.getElementById('map-canvas'),
-                mapOptions);
-
-            var image = 'images/maps/pin-maps.png';
-            var myLatLng = new google.maps.LatLng(-33.890542, 151.274856);
-            var beachMarker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                icon: image
-            });
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
 @endsection
 
 <script type="application/ld+json">
@@ -387,5 +365,6 @@
       "ratingCount" : "{{$commerce->votes_positive + $commerce->votes_negative}}"
     }
   }
+
 
 </script>
