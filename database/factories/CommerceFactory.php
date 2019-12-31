@@ -6,7 +6,7 @@ use guiaceliaca\Commerce;
 use Faker\Generator as Faker;
 
 $factory->define(Commerce::class, function (Faker $faker) {
-    $title = $faker->unique()->word(5);
+    $title = $faker->unique()->word(10);
 
     return [
         'name' => $title,
@@ -20,7 +20,7 @@ $factory->define(Commerce::class, function (Faker $faker) {
         'facebook' => 'https://www.facebook.com/celiacosmendozaOK',
         'twitter' => 'https://twitter.com/nardellip',
         'instagram' => 'https://www.instagram.com/celiacosmendoza/',
-        'logo' => $faker->imageUrl(),
+        'logo' => '',
         'type' => $faker->randomElement($array = array('FREE','BASIC','CLASIC','PREMIUM')),
         'slug' => $title,
         'user_id' => rand(1, 10),

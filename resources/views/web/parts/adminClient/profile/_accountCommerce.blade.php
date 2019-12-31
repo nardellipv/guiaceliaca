@@ -151,14 +151,45 @@
                             <a href="{{ route('profile.edit', $user) }}" type="button"
                                class="btn btn-warning btn-xs btn-block">Modificar Perfíl</a>
                         </div>
+
                         <div class="col-md-5">
+                            @if(Auth::user()->type === 'CLIENT' AND count($commercesPro) > 0)
+                                <div class="section-title line-style no-margin space-form">
+                                    <h3 class="title">Comercios Recomendados</h3>
+                                </div>
+                                @foreach($commercesPro as $commercePro)
+                                    <div class="logs">
+                                        <div class="box-ads box-grid mini">
+                                            <a class="hover-effect image image-fill" href="{{ route('name.commerce', $commercePro->slug) }}">
+                                                <span class="cover"></span>
+                                                @if (!$commercePro->logo)
+                                                    <img alt="guía celiaca"
+                                                         src="{{ asset('images/img-logo-grande.png') }}" class="img-responsive">
+                                                @else
+                                                    <img alt="{{ $commercePro->name }}"
+                                                         src="{{ asset('users/images/' . $commercePro->user->id . '/comercio/358x250-'. $commercePro->logo) }}">
+                                                @endif
+                                            </a>
+                                            <span class="price">{{ Str::limit($commercePro->name, 15) }}</span>
+                                            <div class="footer">
+                                                <a class="btn btn-default"
+                                                   href="{{ route('name.commerce', $commercePro->slug) }}">
+                                                    Ir al negocio
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            @endif
+
                             <div class="section-title line-style no-margin space-form">
                                 <h3 class="title">Últimas Noticias</h3>
                             </div>
                             @foreach($lastBlog as $blog)
                                 <div class="logs">
                                     <div class="box-ads box-grid mini">
-                                        <a class="hover-effect image image-fill" href="property-detail.html">
+                                        <a class="hover-effect image image-fill"
+                                           href="{{ route('post.blog', $blog->slug) }}">
                                             <span class="cover"></span>
                                             <img alt="Sample images"
                                                  src="{{ asset('blog/images/301x160-' .$blog->photo) }}">

@@ -18,9 +18,9 @@ class HomeController extends Controller
             ->orderBy('created_at', 'DESC')
             ->paginate(6);
 
-        /*$commercesPro = Commerce::with(['user', 'province'])
-            ->where('type', '!=', 'FREE')
-            ->get();*/
+        $commercesPro = Commerce::with(['user', 'province'])
+            ->where('type', 'PREMIUM')
+            ->get();
 
         $lastNews = Blog::orderBy('created_at', 'DESC')
             ->where('status', 'ACTIVE')
@@ -41,7 +41,7 @@ class HomeController extends Controller
         $payments = Payment::all();
 
         return view('web.index', compact('commercesLastRegister', 'lastNews', 'provinces',
-            'characteristics', 'payments', 'ratingVisit', 'ratingVote', 'device'));
+            'characteristics', 'payments', 'ratingVisit', 'ratingVote', 'device', 'commercesPro'));
     }
 
     public function searchCommerce(Request $request)

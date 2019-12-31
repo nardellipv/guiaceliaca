@@ -35,6 +35,8 @@ Route::view('/terminos', 'web.parts._term')->name('term');
 
 Route::view('/privacidad', 'web.parts._policity')->name('policity');
 
+Route::view('/ayuda-paquetes', 'web.parts.adminClient.profile._FAQPackets')->name('faq.packets');
+
 Route::get('votes_positive/{slug}', 'CommerceController@positive')->name('positive');
 Route::get('votes_negative/{slug}', 'CommerceController@negative')->name('negative');
 

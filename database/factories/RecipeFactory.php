@@ -11,7 +11,7 @@ $factory->define(Recipe::class, function (Faker $faker) {
         'name' => $title,
         'ingredients' => $faker->sentence($nbWords = 20, $variableNbWords = true),
         'steps' => $faker->sentence($nbWords = 10, $variableNbWords = true),
-        'photos' => $faker->imageUrl($width = 640, $height = 480),
+        'photos' => '',
         'likes' => rand('1','100'),
         'slug' => $title,
         'user_id' => rand('1','10'),

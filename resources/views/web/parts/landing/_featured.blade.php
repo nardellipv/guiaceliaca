@@ -1,4 +1,4 @@
-<section id="recent-listed" data-parallax-speed="-0.3" class="hidden-xs" style="background: url({{ asset('style/images/parallax/strawberry.jpg') }})50% 32px / cover;">
+<section id="recent-listed" data-parallax-speed="-0.3" class="hidden-xs" style="background: url({{ asset('style/images/parallax/strawberry.jpg') }})50% 32px / cover; padding-bottom: 45%">
     <div class="section-detail">
         <h1 style="color: cornsilk;">Negocios Sin TACC Destacados</h1>
         <h2 style="padding: 10px 110px 0px 110px">Felicitamos a <b>{{ $ratingVote->name }}</b> por ser el local con mayor cantidad de votos positivos y

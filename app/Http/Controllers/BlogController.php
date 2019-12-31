@@ -4,6 +4,7 @@ namespace guiaceliaca\Http\Controllers;
 
 use Brian2694\Toastr\Facades\Toastr;
 use guiaceliaca\Blog;
+use guiaceliaca\Commerce;
 
 class BlogController extends Controller
 {
@@ -13,7 +14,11 @@ class BlogController extends Controller
             ->orderBy('created_at', 'DESC')
             ->paginate(5);
 
-        return view('web.parts.blog._index', compact('posts'));
+        $commercesPro = Commerce::with(['user', 'province'])
+            ->where('type', 'CLASIC')
+            ->get();
+
+        return view('web.parts.blog._index', compact('posts', 'commercesPro'));
     }
 
     public function postBlog($slug)
@@ -24,7 +29,11 @@ class BlogController extends Controller
         Blog::where('id', $post->id)
             ->increment('view',1);
 
-        return view('web.parts.blog._postBlog', compact('post'));
+        $commercesPro = Commerce::with(['user', 'province'])
+            ->where('type', 'CLASIC')
+            ->get();
+
+        return view('web.parts.blog._postBlog', compact('post','commercesPro'));
     }
 
     public function postLike($id)

@@ -20,6 +20,7 @@ use guiaceliaca\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use Image;
 
@@ -39,9 +40,13 @@ class ProfileCommerceController extends Controller
             ->take(2)
             ->get();
 
+        $commercesPro = Commerce::with(['user', 'province'])
+            ->where('type', 'PREMIUM')
+            ->get();
+
         Cookie::queue('login', 'ingreso', '2628000');
 
-        return view('web.parts.adminClient.profile._accountCommerce', compact('lastMessages', 'lastBlog'));
+        return view('web.parts.adminClient.profile._accountCommerce', compact('lastMessages', 'lastBlog', 'commercesPro'));
     }
 
     public function profileEdit($id)
@@ -232,8 +237,17 @@ class ProfileCommerceController extends Controller
 
     public function updateAccountCommerceCommerce(CreateProfileCommerceRequest $request, $id)
     {
+
         $commerce = Commerce::find($id);
-//        $commerce->type = $request['type'];
+
+//        verifico si cambio el tipo de cuenta
+        if($commerce->type != $request->type){
+            $typeCommerce = 1;
+        }else{
+            $typeCommerce = 0;
+        }
+
+        $commerce->type = $request['type'];
         $commerce->fill($request->all())->save();
 
         $characteristicId = $request->characteristic_id;
@@ -297,8 +311,21 @@ class ProfileCommerceController extends Controller
 
         $commerce->save();
 
-        Toastr::success('Perfil actualizado correctamente', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
-        return back();
+        if($typeCommerce == 0) {
+            Toastr::success('Perfil actualizado correctamente.', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
+            return back();
+        }else {
+            Toastr::success('Perfil actualizado correctamente.', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
+            Toastr::info('Nos comunicaremos con usted por el cambio de cuenta.', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
+
+            Mail::send('emails.MailChangeTypeAccount', ['commerce' => $commerce], function ($msj) use ($commerce) {
+                $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+                $msj->subject('Cambio de cuenta');
+                $msj->to('nardellipv@gmail.com');
+            });
+
+            return back();
+        }
     }
 
     public function deleteCharacteristic($id)

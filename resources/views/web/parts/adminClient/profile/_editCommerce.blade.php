@@ -101,6 +101,11 @@
                                 @endforeach
                             </div><!-- ./row -->
                         </div>
+
+                        <div class="info-block" id="features">
+                                @include('web.parts.adminClient.profile._paquets')
+                        </div>
+
                     </div>
 
                     <div class="col-sm-12 col-md-4">
@@ -158,69 +163,9 @@
                                                                  value="{{ $payment->id }}"
                                                                  data-labelauty="{{ $payment->name }}"></div>
                                 @endforeach
-                            </div><!-- ./row -->
+                            </div>
                         </div>
-
-                        {{--<div class="section-title line-style">
-                            <h3 class="title">Position on Map</h3>
-                        </div>
-                        <div class="map-box">
-                            <div id="map-canvas" style="height: 500px"></div>
-                            <span><i class="fa fa-map-marker"></i> Drag the pin to the location on the map</span>
-                        </div>--}}
-                        {{--<div class="section-title line-style">
-                            <h3 class="title">Seleccione un paquete</h3>
-                        </div>
-                        <div id="pricing-box" class="row">
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="pricing hover-effect select" data-price="99.99">
-									<span class="header">
-										<span class="title">FREE</span>
-										<span class="sub-title">Exposición Baja</span>
-										<span class="cover"></span>
-									</span>
-                                    <div class="price">$ 0,00</div>
-                                    <input class="btn btn-default select-button" name="type" value="FREE" type="radio"
-                                           checked>
-                                </div><!-- /.pricing -->
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="pricing hover-effect no-select">
-									<span class="header">
-										<span class="title">Básica</span>
-										<span class="sub-title">Exposición Normal</span>
-										<span class="cover"></span>
-									</span>
-                                    <div class="price">$ 99,99</div>
-                                    <input class="btn btn-default select-button" name="type" value="BASIC" type="radio">
-                                </div><!-- /.pricing -->
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="pricing hover-effect no-select">
-									<span class="header">
-										<span class="title">Clásica</span>
-										<span class="sub-title">Exposición Alta</span>
-										<span class="cover"></span>
-									</span>
-                                    <div class="price">$ 209,99</div>
-                                    <input class="btn btn-default select-button" name="type" value="CLASIC"
-                                           type="radio">
-                                </div><!-- /.pricing -->
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6">
-                                <div class="pricing hover-effect no-select">
-									<span class="header">
-										<span class="title">Premium</span>
-										<span class="sub-title">Alta Exposición + Sitio web</span>
-										<span class="cover"></span>
-									</span>
-                                    <div class="price">$ 399,99</div>
-                                    <input class="btn btn-default select-button" name="type" value="PREMIUM"
-                                           type="radio">
-                                </div><!-- /.pricing -->
-                            </div>
-                        </div>--}}
-                    </div><!-- /.col-md-4 -->
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-8 text-right">

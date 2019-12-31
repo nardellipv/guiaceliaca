@@ -75,7 +75,7 @@
     {{--color template--}}
 
     @include('external.analytics')
-    @include('external.adsenses')
+    {{--@include('external.adsenses')--}}
     {{--@include('external.pixel')--}}
 </head>
 <body class="fixed-header">
