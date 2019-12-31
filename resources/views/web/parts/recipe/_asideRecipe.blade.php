@@ -1,6 +1,7 @@
+@if(count($commercesPro) > 0)
 <div class="col-sm-4 col-md-3">
     <div class="section-title line-style no-margin">
-        <h3 class="title">Publicidad</h3>
+        <h3 class="title">Recomendados</h3>
     </div>
 
     @foreach($commercesPro as $commercePro)
@@ -27,3 +28,4 @@
         </div>
     @endforeach
 </div>
+@endif
