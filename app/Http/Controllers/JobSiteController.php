@@ -19,6 +19,12 @@ class JobSiteController extends Controller
             ->take(3)
             ->get();
 
+        //selecciono los que se envian y los pongo como enviados
+        foreach ($sendPost as $post){
+            $post->send = '1';
+            $post->save();
+        }
+
         if (count($sendPost) > 0) {
             foreach ($emails as $email) {
                 Mail::send('emails.mailNews', ['email' => $email, 'sendPost' => $sendPost], function ($msj) use ($email, $sendPost) {
@@ -26,13 +32,6 @@ class JobSiteController extends Controller
                     $msj->subject('Novedades del mes');
                     $msj->to($email->email, 'Guía Celíaca');
                 });
-                //selecciono los que se envian y los pongo como enviados
-                $post = Blog::where('send', 0)
-                    ->orderBy('created_at', 'ASC')
-                    ->take(3)
-                    ->first();
-                $post->send = '1';
-                $post->save();
             }
 
         } else {

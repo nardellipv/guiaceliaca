@@ -75,6 +75,7 @@
     {{--color template--}}
 
     @include('external.analytics')
+    {{--@include('external.hotjar')--}}
     {{--@include('external.adsenses')--}}
     {{--@include('external.pixel')--}}
 </head>
