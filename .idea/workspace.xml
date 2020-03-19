@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8c23633-b98e-44b8-9692-806e8ad8cf3f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/web/parts/recipe/_asideRecipe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web/parts/recipe/_asideRecipe.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,23 +53,37 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="_asideRecipe.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/web/parts/recipe/_asideRecipe.blade.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="326">
+              <caret line="124" column="63" selection-start-line="124" selection-start-column="51" selection-end-line="124" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_recipe.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php">
+      <file leaf-file-name="JobSiteController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobSiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="98" column="41" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+            <state relative-caret-position="1105">
+              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/JobController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" column="44" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_registerUser.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/emails/job/_registerUser.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -79,13 +92,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="blade" />
+        <option value="Blade" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$messageCommerce</find>
-      <find>http</find>
       <find>sendpo</find>
       <find>https://www.guiaceliaca.com.ar/bloghttps://guiaceliaca.com.ar/blog/listado</find>
       <find>https://www.guiaceliaca.com.ar/blog</find>
@@ -114,6 +126,8 @@
       <find>más</find>
       <find>mas info</find>
       <find>free</find>
+      <find>resumeClient</find>
+      <find>userRegister</find>
     </findStrings>
     <replaceStrings>
       <replace>yellow</replace>
@@ -135,16 +149,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminNewsLetterController.php" />
-        <option value="$PROJECT_DIR$/app/Providers/ComposerSeviceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Http/Variables/menuMovil.php" />
-        <option value="$PROJECT_DIR$/resources/views/web/parts/_menu.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/commerce/_modalProducts.blade.php" />
         <option value="$PROJECT_DIR$/app/Product.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CommerceController.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/recipe/_listRecipes.blade.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/MessageNoRead.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/adminClient/profile/_asideProfile.blade.php" />
@@ -166,12 +175,10 @@
         <option value="$PROJECT_DIR$/resources/views/web/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/_paidHome.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/adminClient/profile/_accountCommerce.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/web/parts/blog/_asideBlog.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RecipeController.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/adminClient/profile/_editCommerce.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/adminClient/profile/_modalPackets.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/factories/RecipeFactory.php" />
         <option value="$PROJECT_DIR$/database/factories/CommerceFactory.php" />
         <option value="$PROJECT_DIR$/database/factories/BlogFactory.php" />
@@ -182,10 +189,17 @@
         <option value="$PROJECT_DIR$/resources/views/emails/MailChangeTypeAccount.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/landing/_featured.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/external/hotjar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/JobSiteController.php" />
-        <option value="$PROJECT_DIR$/resources/views/web/parts/recipe/_asideRecipe.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/web/parts/recipe/_asideRecipe.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/web/parts/blog/_asideBlog.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/emails/job/commercesRegisterToUsers.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/web/parts/_recommendSite.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/web/parts/_menu.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/JobSiteController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/JobController.php" />
       </list>
     </option>
   </component>
@@ -322,7 +336,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -354,7 +367,7 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="guiaceliaca" type="b2602c69:ProjectViewProjectNode" />
@@ -372,33 +385,25 @@
               <item name="guiaceliaca" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="emails" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="guiaceliaca" type="b2602c69:ProjectViewProjectNode" />
               <item name="guiaceliaca" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="parts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guiaceliaca" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guiaceliaca" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="parts" type="462c0819:PsiDirectoryNode" />
-              <item name="recipe" type="462c0819:PsiDirectoryNode" />
+              <item name="emails" type="462c0819:PsiDirectoryNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="sendNewsLetters&#9;null&#9;null&#10;topVisitCommerces&#9;null&#9;null&#10;AdminUserController&#9;null&#9;null&#10;ProfileCommerceController&#9;null&#9;null&#10;user&#9;null&#9;null&#10;canre&#9;null&#9;null&#10;resetpass&#9;FILE&#9;file://D:/Webs/guiaceliaca/vendor/laravel/framework/src/Illuminate/Auth/Notifications/ResetPassword.php&#10;home.&#9;FILE&#9;file://D:/Webs/guiaceliaca/public/style/css/template/pages/home.css&#10;header&#9;FILE&#9;file://D:/Webs/guiaceliaca/public/style/css/template/pages/header-page.css&#10;searcher&#9;FILE&#9;file://D:/Webs/guiaceliaca/public/style/css/template/searcher.css&#10;modal.c&#9;FILE&#9;file://D:/Webs/guiaceliaca/public/style/css/template/modal.css&#10;HomeController&#9;FILE&#9;file://D:/Webs/guiaceliaca/app/Http/Controllers/HomeController.php" />
+    <property name="SearchEverywhereHistoryKey" value="_registerNewsLetter&#9;FILE&#9;file://D:/Webs/guiaceliaca/resources/views/emails/job/_registerNewsLetter.blade.php&#10;_registerUser&#9;FILE&#9;file://D:/Webs/guiaceliaca/resources/views/emails/job/_registerUser.blade.php&#10;sendNewsLetters&#9;null&#9;null&#10;topVisitCommerces&#9;null&#9;null&#10;AdminUserController&#9;null&#9;null&#10;ProfileCommerceController&#9;null&#9;null&#10;user&#9;null&#9;null&#10;canre&#9;null&#9;null&#10;resetpass&#9;FILE&#9;file://D:/Webs/guiaceliaca/vendor/laravel/framework/src/Illuminate/Auth/Notifications/ResetPassword.php&#10;home.&#9;FILE&#9;file://D:/Webs/guiaceliaca/public/style/css/template/pages/home.css&#10;header&#9;FILE&#9;file://D:/Webs/guiaceliaca/public/style/css/template/pages/header-page.css&#10;searcher&#9;FILE&#9;file://D:/Webs/guiaceliaca/public/style/css/template/searcher.css&#10;modal.c&#9;FILE&#9;file://D:/Webs/guiaceliaca/public/style/css/template/modal.css&#10;HomeController&#9;FILE&#9;file://D:/Webs/guiaceliaca/app/Http/Controllers/HomeController.php" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -407,7 +412,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MariaDB&#10;MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fourcomex" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mivete" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
@@ -506,12 +511,15 @@
       <workItem from="1577554353941" duration="6223000" />
       <workItem from="1577743508532" duration="5128000" />
       <workItem from="1577802001125" duration="8588000" />
-      <workItem from="1577824684762" duration="2151000" />
+      <workItem from="1577824684762" duration="3014000" />
+      <workItem from="1578519386998" duration="459000" />
+      <workItem from="1579003790960" duration="63000" />
+      <workItem from="1579003874851" duration="759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360353000" />
+    <option name="totallyTimeSpent" value="362497000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,17 +534,16 @@
     <frame x="-1608" y="71" width="1616" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.3292683" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24454428" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.5072084" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32896462" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32969153" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.47843137" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.5529412" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" x="-1578" y="289" width="1556" height="480" id="Terminal" order="9" weight="0.65751636" />
-      <window_info anchor="right" id="Remote Host" order="3" weight="0.3292683" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22528884" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32969153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" x="-1578" y="289" width="1556" height="480" id="Terminal" order="9" weight="0.65751636" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -544,9 +551,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32896462" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.47843137" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32896462" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32896462" />
     </layout>
   </component>
@@ -578,41 +586,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ProfileUserRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_08_23_191105_create_commerces_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/CreateProfileCommerceRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/_aside.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/external/snipperCommerce.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/external/snipperHome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/commerce/_productList.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="99" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/web/parts/blog/_index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -717,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/blog/_asideBlog.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="26" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecipeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -793,9 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/resumeClient.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/emails/MailContactPopUp.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -837,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AdminBlogController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1035" />
@@ -861,33 +817,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobSiteController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/blog/_asideBlog.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="129" column="59" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="59" />
+        <state relative-caret-position="644">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/web/parts/recipe/_asideRecipe.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="69">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/recipe/_recipe.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/job/commercesRegisterToUsers.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/searching/_searchCommerce.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="98" column="41" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+        <state relative-caret-position="68">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="53" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/_recommendSite.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/web/parts/_menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/resumeClient.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="80" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="124" column="63" selection-start-line="124" selection-start-column="51" selection-end-line="124" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JobSiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/JobController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/emails/job/_registerUser.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

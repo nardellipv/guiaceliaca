@@ -16,7 +16,9 @@ class JobController extends Controller
         $users = User::orderBy('created_at', 'DESC')
             ->get();
 
-        Mail::send('emails.job._registerUser', ['users' => $users], function ($msj) {
+        $userCount = User::count();
+
+        Mail::send('emails.job._registerUser', ['users' => $users, 'userCount' => $userCount], function ($msj) {
 
             $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
 
@@ -31,7 +33,9 @@ class JobController extends Controller
     {
         $newsLetters = NewsLetter::all();
 
-        Mail::send('emails.job._registerNewsLetter', ['newsLetters' => $newsLetters], function ($msj) {
+        $newsLettersCount = NewsLetter::count();
+
+        Mail::send('emails.job._registerNewsLetter', ['newsLetters' => $newsLetters, 'newsLettersCount' => $newsLettersCount], function ($msj) {
 
             $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
 

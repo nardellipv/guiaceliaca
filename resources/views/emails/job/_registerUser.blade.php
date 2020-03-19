@@ -1,6 +1,7 @@
 <p><img src="https://guiaceliaca.com.ar/images/img-logo.png" alt="" width="178" height="145"/></p>
 <hr/>
 <p>Reporte de usuarios registrados</p>
+<p><b>Cantidad de usuarios:</b> {{ $userCount }}</p>
 
 <table style="height: 77px; margin-left: auto; margin-right: auto;" border="1" width="480">
     <tbody>
