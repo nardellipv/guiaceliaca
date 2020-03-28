@@ -9,7 +9,7 @@
         </div>
         <div class="container">
             <div class="row">
-                @if(count($searching) > 0)
+            @if(count($searching) > 0)
                     @foreach($searching as $search)
                         <div class="col-sm-6 col-md-3">
                             <!-- . Agent Box -->

@@ -16,13 +16,13 @@ class HomeController extends Controller
     public function index()
     {
         $commercesLastRegister = Commerce::with(['user', 'province'])
-            ->where('created_at','>=', Date::parse('-1 days'))
+            ->where('created_at', '>=', Date::parse('-1 days'))
             ->orderBy('created_at', 'DESC')
             ->paginate(6);
 
 
         $commercesListed = Commerce::with(['user', 'province'])
-            ->where('created_at','<=', Date::parse('31 days'))
+            ->where('created_at', '<=', Date::parse('31 days'))
             ->inRandomOrder()
             ->paginate(9);
 
@@ -35,7 +35,7 @@ class HomeController extends Controller
             ->take(3)
             ->get();
 
-        $ratingVote = Commerce::orderBy('votes_positive','desc')
+        $ratingVote = Commerce::orderBy('votes_positive', 'desc')
             ->whereRaw('(votes_positive*100)/(votes_positive + votes_negative)')
             ->first();
 
@@ -54,11 +54,22 @@ class HomeController extends Controller
 
     public function searchCommerce(Request $request)
     {
-        $searching = Commerce::with(['user'])
-            ->orWhere('name', 'LIKE', "%{$request->keywords}%")
-            ->orWhere('province_id', $request->provinices)
-            ->get();
 
-        return view('web.parts.searching._searchCommerce', compact('searching'));
+        if ($request->keywords) {
+            $searching = Commerce::with(['user'])
+                ->where('name', 'LIKE', "%$request->keywords%")
+                ->get();
+
+            return view('web.parts.searching._searchCommerce', compact('searching'));
+        }
+
+        if ($request->provinices) {
+            $searching = Commerce::with(['user'])
+                ->orWhere('province_id', $request->provinices)
+                ->get();
+
+            return view('web.parts.searching._searchCommerce', compact('searching'));
+        }
+
     }
 }
