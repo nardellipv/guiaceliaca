@@ -95,6 +95,8 @@ Route::middleware(['auth','UserType'])->group(function () {
     Route::get('/admin/blog/list', 'Admin\AdminBlogController@listBlogAdmin')->name('admin.listBlog');
     Route::get('/admin/blog/create', 'Admin\AdminBlogController@createBlog')->name('admin.createBlog');
     Route::post('/admin/blog/store', 'Admin\AdminBlogController@storeBlog')->name('admin.storeBlog');
+    Route::get('/admin/blog/view/{id}', 'Admin\AdminBlogController@viewBlog')->name('admin.viewBlog');
+    Route::patch('/admin/blog/edit/{id}', 'Admin\AdminBlogController@editBlog')->name('admin.editBlog');
     Route::get('/admin/blog/active/{id}', 'Admin\AdminBlogController@activeBlog')->name('admin.activeBlog');
     Route::get('/admin/blog/desactive/{id}', 'Admin\AdminBlogController@desactiveBlog')->name('admin.desactiveBlog');
 

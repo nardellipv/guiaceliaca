@@ -20,6 +20,7 @@
                     <th class="min-tablet">Estado</th>
                     <th class="min-tablet">Vistas</th>
                     <th class="min-tablet">Likes</th>
+                    <th class="min-tablet">Enviado</th>
                     <th>Acción</th>
                 </tr>
                 </thead>
@@ -31,13 +32,14 @@
                         <td>{{ $post->status }}</td>
                         <td>{{ $post->view }}</td>
                         <td>{{ $post->like }}</td>
+                        <td>{{ $post->send }}</td>
                         <td>
                             @if($post->status == 'DESACTIVE')
                                 <a href="{{ route('admin.activeBlog', $post) }}" class="btn btn-primary btn-icon btn-circle icon-lg fa fa-thumbs-up"></a>
                             @else
                                 <a href="{{ route('admin.desactiveBlog', $post) }}" class="btn btn-danger btn-icon btn-circle icon-lg fa fa-times"></a>
                             @endif
-                            <button class="btn btn-warning btn-icon btn-circle icon-lg fa fa-edit"></button>
+                            <a href="{{ route('admin.viewBlog', $post->id) }}" class="btn btn-warning btn-icon btn-circle icon-lg fa fa-edit"></a>
                         </td>
                     </tr>
                 @endforeach
