@@ -9,14 +9,22 @@ use guiaceliaca\Commerce;
 use guiaceliaca\Payment;
 use guiaceliaca\Province;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Date;
 
 class HomeController extends Controller
 {
     public function index()
     {
         $commercesLastRegister = Commerce::with(['user', 'province'])
+            ->where('created_at','>=', Date::parse('-1 days'))
             ->orderBy('created_at', 'DESC')
             ->paginate(6);
+
+
+        $commercesListed = Commerce::with(['user', 'province'])
+            ->where('created_at','<=', Date::parse('31 days'))
+            ->inRandomOrder()
+            ->paginate(9);
 
         $commercesPro = Commerce::with(['user', 'province'])
             ->where('type', 'PREMIUM')
@@ -41,7 +49,7 @@ class HomeController extends Controller
         $payments = Payment::all();
 
         return view('web.index', compact('commercesLastRegister', 'lastNews', 'provinces',
-            'characteristics', 'payments', 'ratingVisit', 'ratingVote', 'device', 'commercesPro'));
+            'characteristics', 'payments', 'ratingVisit', 'ratingVote', 'device', 'commercesPro', 'commercesListed'));
     }
 
     public function searchCommerce(Request $request)

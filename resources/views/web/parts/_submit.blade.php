@@ -1,4 +1,4 @@
-<section id="submit-property" data-parallax-speed="0" style="background: url({{ asset('style/images/parallax/buenos-aires.jpg') }})50% 32px / cover;">>
+<section id="submit-property" data-parallax-speed="0" style="background: url({{ asset('style/images/parallax/buenos-aires.jpg') }})50% 32px / cover;">
     <span class="overlay"></span>
     <div class="container">
         <div class="section-detail">

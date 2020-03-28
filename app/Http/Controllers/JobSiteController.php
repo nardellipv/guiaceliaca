@@ -7,6 +7,8 @@ use guiaceliaca\Commerce;
 use guiaceliaca\Message;
 use guiaceliaca\NewsLetter;
 use guiaceliaca\User;
+use Brian2694\Toastr\Facades\Toastr;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
 class JobSiteController extends Controller
@@ -114,5 +116,20 @@ class JobSiteController extends Controller
                 $msj->to($commerce->user->email, $commerce->user->name);
             });
         }
+    }
+
+
+    public function recommnedMail(Request $request)
+    {
+        $email = $request->email;
+
+        Mail::send('emails.Recommend', ['email' => $email], function ($msj) use ($email) {
+            $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+            $msj->subject('Te recomendaron');
+            $msj->to($email);
+        });
+
+        Toastr::info('Muchas Gracias, le estamos enviando la invitación al local', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
+        return redirect('/');
     }
 }
