@@ -16,7 +16,7 @@ class HomeController extends Controller
     public function index()
     {
         $commercesLastRegister = Commerce::with(['user', 'province'])
-            ->where('created_at', '>=', Date::parse('-1 days'))
+            ->where('created_at', '>=', Date::parse('-30 days'))
             ->orderBy('created_at', 'DESC')
             ->paginate(6);
 

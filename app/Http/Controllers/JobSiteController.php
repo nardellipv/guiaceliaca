@@ -9,6 +9,7 @@ use guiaceliaca\NewsLetter;
 use guiaceliaca\User;
 use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Mail;
 
 class JobSiteController extends Controller
@@ -131,5 +132,20 @@ class JobSiteController extends Controller
 
         Toastr::info('Muchas Gracias, le estamos enviando la invitación al local', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
         return redirect('/');
+    }
+
+
+    public function missYou()
+    {
+        $users = User::where('lastLogin','<=', Date::parse('-15days'))
+            ->get();
+
+        foreach ($users as $user){
+            Mail::send('emails.MailMissYou', ['user' => $user], function ($msj) use ($user) {
+                $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+                $msj->subject('Te extrañamos');
+                $msj->to($user->email, $user->name);
+            });
+        }
     }
 }

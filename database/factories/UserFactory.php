@@ -2,6 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 use guiaceliaca\User;
+use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Str;
 use Faker\Generator as Faker;
 
@@ -24,6 +25,7 @@ $factory->define(User::class, function (Faker $faker) {
         'type' => $faker->randomElement($array = array('ADMIN', 'CLIENT', 'OWNER')),
         'status' => $faker->randomElement($array = array('ACTIVE', 'DESACTIVE')),
         'password' => bcrypt('123'),
-        'remember_token' => str_random(10),
+        'lastLogin' => Date::parse('-10day'),
+        'remember_token' => Str::random(10),
     ];
 });

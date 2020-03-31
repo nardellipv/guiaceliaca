@@ -26,6 +26,7 @@ use Image;
 
 class ProfileCommerceController extends Controller
 {
+
     public function profileCommerce()
     {
         if (Auth::user()->type == 'OWNER') {
@@ -43,6 +44,14 @@ class ProfileCommerceController extends Controller
         $commercesPro = Commerce::with(['user', 'province'])
             ->where('type', 'PREMIUM')
             ->get();
+
+
+        if(!Cookie::get('lastLogin')) {
+            $lastLogin = User::find(Auth::user()->id);
+            $lastLogin->lastLogin = now();
+            $lastLogin->save();
+            Cookie::queue('lastLogin', 'ultimoIngreso', '10');
+        }
 
         Cookie::queue('login', 'ingreso', '2628000');
 

@@ -170,9 +170,9 @@
                                     </div>
                                 </div>
                             </a>
-
-
                         </div>
+
+
                         <div class="col-md-8" id="ubicacion">
                             <h1>{{ $commerce->name }}</h1>
                             <!-- 6. Description -->
