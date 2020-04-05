@@ -121,6 +121,8 @@
 
                             @else
                                 <h6>Necesita estar logueado para poder dejar comentarios.</h6>
+                                <a href="{{ url('login') }}" type="button"
+                                   class="btn btn-reverse btn-xs">Ingresar</a>
                                 <a href="{{ url('register') }}" type="button"
                                    class="btn btn-reverse btn-xs">Registrarse</a>
                             @endif

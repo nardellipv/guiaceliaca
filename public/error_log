@@ -1,0 +1,81 @@
+[05-Apr-2020 12:46:40 America/Argentina/Mendoza] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home/guiaceliaca/guia/vendor/symfony/translation/TranslatorInterface.php on line 24
+[05-Apr-2020 12:46:40 America/Argentina/Mendoza] PHP Fatal error:  Uncaught InvalidArgumentException: Route [list.blog] not defined. in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:388
+Stack trace:
+#0 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(782): Illuminate\Routing\UrlGenerator->route('list.blog', Array, true)
+#1 /home/guiaceliaca/guia/storage/framework/views/4ce3a41da55815c05bc7b464eea9fd7cf5208a0d.php(7): route('list.blog')
+#2 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/guiacelia...')
+#3 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/guiacelia...', Array)
+#4 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/guiacelia...', Array)
+#5 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\View\Vie in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 388
+[05-Apr-2020 12:46:45 America/Argentina/Mendoza] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home/guiaceliaca/guia/vendor/symfony/translation/TranslatorInterface.php on line 24
+[05-Apr-2020 12:46:45 America/Argentina/Mendoza] PHP Fatal error:  Uncaught InvalidArgumentException: Route [list.blog] not defined. in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:388
+Stack trace:
+#0 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(782): Illuminate\Routing\UrlGenerator->route('list.blog', Array, true)
+#1 /home/guiaceliaca/guia/storage/framework/views/4ce3a41da55815c05bc7b464eea9fd7cf5208a0d.php(7): route('list.blog')
+#2 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/guiacelia...')
+#3 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/guiacelia...', Array)
+#4 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/guiacelia...', Array)
+#5 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\View\Vie in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 388
+[05-Apr-2020 12:47:43 America/Argentina/Mendoza] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home/guiaceliaca/guia/vendor/symfony/translation/TranslatorInterface.php on line 24
+[05-Apr-2020 12:47:43 America/Argentina/Mendoza] PHP Fatal error:  Uncaught InvalidArgumentException: Route [list.blog] not defined. in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:388
+Stack trace:
+#0 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(782): Illuminate\Routing\UrlGenerator->route('list.blog', Array, true)
+#1 /home/guiaceliaca/guia/storage/framework/views/4ce3a41da55815c05bc7b464eea9fd7cf5208a0d.php(7): route('list.blog')
+#2 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/guiacelia...')
+#3 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/guiacelia...', Array)
+#4 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/guiacelia...', Array)
+#5 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\View\Vie in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 388
+[05-Apr-2020 12:47:48 America/Argentina/Mendoza] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home/guiaceliaca/guia/vendor/symfony/translation/TranslatorInterface.php on line 24
+[05-Apr-2020 12:47:48 America/Argentina/Mendoza] PHP Fatal error:  Uncaught InvalidArgumentException: Route [list.blog] not defined. in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:388
+Stack trace:
+#0 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(782): Illuminate\Routing\UrlGenerator->route('list.blog', Array, true)
+#1 /home/guiaceliaca/guia/storage/framework/views/4ce3a41da55815c05bc7b464eea9fd7cf5208a0d.php(7): route('list.blog')
+#2 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/guiacelia...')
+#3 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/guiacelia...', Array)
+#4 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/guiacelia...', Array)
+#5 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\View\Vie in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 388
+[05-Apr-2020 12:47:54 America/Argentina/Mendoza] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home/guiaceliaca/guia/vendor/symfony/translation/TranslatorInterface.php on line 24
+[05-Apr-2020 12:47:54 America/Argentina/Mendoza] PHP Fatal error:  Uncaught InvalidArgumentException: Route [list.blog] not defined. in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:388
+Stack trace:
+#0 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(782): Illuminate\Routing\UrlGenerator->route('list.blog', Array, true)
+#1 /home/guiaceliaca/guia/storage/framework/views/4ce3a41da55815c05bc7b464eea9fd7cf5208a0d.php(7): route('list.blog')
+#2 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/guiacelia...')
+#3 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/guiacelia...', Array)
+#4 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/guiacelia...', Array)
+#5 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\View\Vie in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 388
+[05-Apr-2020 12:47:59 America/Argentina/Mendoza] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home/guiaceliaca/guia/vendor/symfony/translation/TranslatorInterface.php on line 24
+[05-Apr-2020 12:47:59 America/Argentina/Mendoza] PHP Fatal error:  Uncaught InvalidArgumentException: Route [list.blog] not defined. in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:388
+Stack trace:
+#0 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(782): Illuminate\Routing\UrlGenerator->route('list.blog', Array, true)
+#1 /home/guiaceliaca/guia/storage/framework/views/4ce3a41da55815c05bc7b464eea9fd7cf5208a0d.php(7): route('list.blog')
+#2 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/guiacelia...')
+#3 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/guiacelia...', Array)
+#4 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/guiacelia...', Array)
+#5 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\View\Vie in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 388
+[05-Apr-2020 12:48:02 America/Argentina/Mendoza] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home/guiaceliaca/guia/vendor/symfony/translation/TranslatorInterface.php on line 24
+[05-Apr-2020 12:48:02 America/Argentina/Mendoza] PHP Fatal error:  Uncaught InvalidArgumentException: Route [list.blog] not defined. in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:388
+Stack trace:
+#0 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(782): Illuminate\Routing\UrlGenerator->route('list.blog', Array, true)
+#1 /home/guiaceliaca/guia/storage/framework/views/4ce3a41da55815c05bc7b464eea9fd7cf5208a0d.php(7): route('list.blog')
+#2 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/guiacelia...')
+#3 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/guiacelia...', Array)
+#4 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/guiacelia...', Array)
+#5 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\View\Vie in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 388
+[05-Apr-2020 12:51:00 America/Argentina/Mendoza] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home/guiaceliaca/guia/vendor/symfony/translation/TranslatorInterface.php on line 24
+[05-Apr-2020 12:51:00 America/Argentina/Mendoza] PHP Fatal error:  Uncaught InvalidArgumentException: Route [list.blog] not defined. in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:388
+Stack trace:
+#0 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(782): Illuminate\Routing\UrlGenerator->route('list.blog', Array, true)
+#1 /home/guiaceliaca/guia/storage/framework/views/4ce3a41da55815c05bc7b464eea9fd7cf5208a0d.php(7): route('list.blog')
+#2 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/guiacelia...')
+#3 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/guiacelia...', Array)
+#4 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/guiacelia...', Array)
+#5 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\View\Vie in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 388
+[05-Apr-2020 12:51:03 America/Argentina/Mendoza] PHP Fatal error:  Declaration of Symfony\Component\Translation\TranslatorInterface::setLocale($locale) must be compatible with Symfony\Contracts\Translation\LocaleAwareInterface::setLocale(string $locale) in /home/guiaceliaca/guia/vendor/symfony/translation/TranslatorInterface.php on line 24
+[05-Apr-2020 12:51:03 America/Argentina/Mendoza] PHP Fatal error:  Uncaught InvalidArgumentException: Route [list.blog] not defined. in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:388
+Stack trace:
+#0 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(782): Illuminate\Routing\UrlGenerator->route('list.blog', Array, true)
+#1 /home/guiaceliaca/guia/storage/framework/views/4ce3a41da55815c05bc7b464eea9fd7cf5208a0d.php(7): route('list.blog')
+#2 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home/guiacelia...')
+#3 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/guiacelia...', Array)
+#4 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(142): Illuminate\View\Engines\CompilerEngine->get('/home/guiacelia...', Array)
+#5 /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/View/View.php(125): Illuminate\View\Vie in /home/guiaceliaca/guia/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 388

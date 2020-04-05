@@ -47,4 +47,9 @@ class User extends Authenticatable
     {
         $this->notify(new ResetPasswordNotification($token));
     }
+
+    public function CommentBlog()
+    {
+        return $this->hasMany(CommentBlog::class);
+    }
 }

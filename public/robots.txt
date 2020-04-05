@@ -1,10 +1,11 @@
 User-Agent: *
-Disallow: /cliente-perfil
-Disallow: /admin/categorias
-Disallow: /admin
-Disallow: /mailclient
-Disallow: /mailcustomers
-Disallow: /checkout
+Disallow: 
+Disallow: /contacto
 Disallow: /terminos
-Disallow: /politicas
-Disallow: /listado
+Disallow: /privacidad
+Disallow: /register
+Disallow: /login
+Disallow: /perfil/
+Disallow: /admin/
+Disallow: /perfil/*
+Disallow: /admin/*

@@ -28,6 +28,7 @@
                                 <span>{{ $post->created_at->format('M') }}</span></span>
                             <a href="#"><i class="fa fa-heart-o"></i><span>{{ $post->like }}</span></a>
                             <a href="#"><i class="fa fa-eye"></i><span>{{ $post->view }}</span></a>
+                            <a href="#"><i class="fa fa-comments"></i><span>{{ $countCommentBlog }}</span></a>
                         </div>
                         <div class="image">
                             <img src="{{ asset('blog/images/787x255-' .$post->photo) }}" alt="{{ $post->title }}"
@@ -54,7 +55,7 @@
                             Compartir en Facebook
                         </div>
                     </a>
-
+                    @include('web.parts.blog._commentBlog')
                 </div>
                 @include('web.parts.blog._asideBlog')
             </div>

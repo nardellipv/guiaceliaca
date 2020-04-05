@@ -86,6 +86,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/perfil/caracteristica/eliminar/{id}', 'AdminClient\ProfileCommerceController@deleteCharacteristic')->name('delete.characteristic');
     Route::get('/perfil/pago/eliminar/{id}', 'AdminClient\ProfileCommerceController@deletePayment')->name('delete.payment');
+
+    Route::post('/comentario-blog/{id}', 'BlogController@commentPost')->name('comment.post');
 });
 
 //Admin Root
