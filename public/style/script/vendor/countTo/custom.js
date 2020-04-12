@@ -1,3 +1,3 @@
-$(function ($) {
-	$('.timer').countTo();
+$(function ($) {
+	$('.timer').countTo();
 });
