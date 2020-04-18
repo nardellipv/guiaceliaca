@@ -33,6 +33,6 @@ class MessageClientToCommerce extends Mailable
     {
         return $this->view('emails.MessageClientToCommerce')
             ->subject('Mensaje en GuíaCelíaca')
-            ->from('no-respond@guiaceliaca.com.ar');
+            ->from('no-responder@guiaceliaca.com.ar');
     }
 }

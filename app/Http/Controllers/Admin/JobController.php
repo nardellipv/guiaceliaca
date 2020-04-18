@@ -20,7 +20,7 @@ class JobController extends Controller
 
         Mail::send('emails.job._registerUser', ['users' => $users, 'userCount' => $userCount], function ($msj) {
 
-            $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+            $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
 
             $msj->subject('Usuario registrados');
 
@@ -37,7 +37,7 @@ class JobController extends Controller
 
         Mail::send('emails.job._registerNewsLetter', ['newsLetters' => $newsLetters, 'newsLettersCount' => $newsLettersCount], function ($msj) {
 
-            $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+            $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
 
             $msj->subject('Usuario registrados');
 

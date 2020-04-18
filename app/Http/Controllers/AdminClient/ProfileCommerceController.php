@@ -328,7 +328,7 @@ class ProfileCommerceController extends Controller
             Toastr::info('Nos comunicaremos con usted por el cambio de cuenta.', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
 
             Mail::send('emails.MailChangeTypeAccount', ['commerce' => $commerce], function ($msj) use ($commerce) {
-                $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+                $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
                 $msj->subject('Cambio de cuenta');
                 $msj->to('nardellipv@gmail.com');
             });

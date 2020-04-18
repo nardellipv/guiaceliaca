@@ -33,6 +33,6 @@ class MailClientContact extends Mailable
     {
         return $this->view('emails.MailClientContact')
             ->subject('Mensaje de GuíaCelíaca')
-            ->from('no-respond@guiaceliaca.com.ar');
+            ->from('no-responder@guiaceliaca.com.ar');
     }
 }

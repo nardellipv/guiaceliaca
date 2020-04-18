@@ -11,6 +11,6 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        factory(\guiaceliaca\User::class, 10)->create();
+        factory(\guiaceliaca\User::class, 5)->create();
     }
 }

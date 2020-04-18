@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'no-respond@guiaceliaca.com.ar'),
+        'address' => env('MAIL_FROM_ADDRESS', 'no-responder@guiaceliaca.com.ar'),
         'name' => env('MAIL_FROM_NAME', 'Guía Celíaca'),
     ],
 

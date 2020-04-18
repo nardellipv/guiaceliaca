@@ -33,6 +33,6 @@ class MailContactPopUp extends Mailable
     {
         return $this->view('emails.MailContactPopUp')
             ->subject('Mensaje de GuíaCelíaca')
-            ->from('no-respond@guiaceliaca.com.ar');
+            ->from('no-responder@guiaceliaca.com.ar');
     }
 }

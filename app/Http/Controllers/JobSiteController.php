@@ -31,7 +31,7 @@ class JobSiteController extends Controller
         if (count($sendPost) > 0) {
             foreach ($emails as $email) {
                 Mail::send('emails.mailNews', ['email' => $email, 'sendPost' => $sendPost], function ($msj) use ($email, $sendPost) {
-                    $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+                    $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
                     $msj->subject('Novedades del mes');
                     $msj->to($email->email, 'Guía Celíaca');
                 });
@@ -44,7 +44,7 @@ class JobSiteController extends Controller
             ]);
 
             Mail::send('emails.job.withoutPost', ['data' => $data], function ($msj) use ($data) {
-                $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+                $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
                 $msj->subject('Novedades del mes');
                 $msj->to('nardellipv@gmail.com', 'Guía Celíaca');
             });
@@ -69,7 +69,7 @@ class JobSiteController extends Controller
 
         foreach ($commerces as $commerce) {
             Mail::send('emails.resumeClient', ['commerce' => $commerce], function ($msj) use ($commerce) {
-                $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+                $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
                 $msj->subject('Resumen Mensual');
                 $msj->to($commerce->user->email, $commerce->user->name);
             });
@@ -82,7 +82,7 @@ class JobSiteController extends Controller
             ->first();
 
         Mail::send('emails.MailTopVisitCommerces', ['commerce' => $commerce], function ($msj) use ($commerce) {
-            $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+            $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
             $msj->subject('Top Comercios');
             $msj->to($commerce->user->email, $commerce->user->name);
         });
@@ -94,7 +94,7 @@ class JobSiteController extends Controller
             ->first();
 
         Mail::send('emails.MailTopVotesCommerces', ['commerce' => $commerce], function ($msj) use ($commerce) {
-            $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+            $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
             $msj->subject('Top Comercios');
             $msj->to($commerce->user->email, $commerce->user->name);
         });
@@ -112,7 +112,7 @@ class JobSiteController extends Controller
 
 
             Mail::send('emails.MessageNoRead', ['commerce' => $commerce], function ($msj) use ($commerce) {
-                $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+                $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
                 $msj->subject('Mensajes sin leer');
                 $msj->to($commerce->user->email, $commerce->user->name);
             });
@@ -125,7 +125,7 @@ class JobSiteController extends Controller
         $email = $request->email;
 
         Mail::send('emails.Recommend', ['email' => $email], function ($msj) use ($email) {
-            $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+            $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
             $msj->subject('Te recomendaron');
             $msj->to($email);
         });
@@ -142,7 +142,7 @@ class JobSiteController extends Controller
 
         foreach ($users as $user){
             Mail::send('emails.MailMissYou', ['user' => $user], function ($msj) use ($user) {
-                $msj->from('no-respond@guiaceliaca.com.ar', 'GuiaCeliaca');
+                $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
                 $msj->subject('Te extrañamos');
                 $msj->to($user->email, $user->name);
             });
