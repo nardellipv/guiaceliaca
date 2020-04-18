@@ -1,7 +1,7 @@
 <?php
 //Artisan::call('up');
 //cleaning
-/*Route::get('/clear', function() {
+Route::get('/clear', function() {
     \Artisan::call('config:clear');
     \Artisan::call('cache:clear');
     \Artisan::call('config:cache');
@@ -11,40 +11,7 @@
 
 Route::get('/down', function(){
     return Artisan::call('down');
-});*/
-
-
-//Clear route cache:
-Route::get('/route', function() {
-    $exitCode = Artisan::call('route:cache');
-    return 'Routes cache cleared';
 });
-
-//Clear config cache:
-Route::get('/config', function() {
-    $exitCode = Artisan::call('config:cache');
-    return 'Config cache cleared';
-});
-
-// Clear application cache:
-Route::get('/clear', function() {
-    $exitCode = Artisan::call('cache:clear');
-    return 'Application cache cleared';
-});
-
-// Clear view cache:
-Route::get('/view', function() {
-    $exitCode = Artisan::call('view:clear');
-    return 'View cache cleared';
-});
-
-// Mantenimiento
-Route::get('/clear', function() {
-    $exitCode = Artisan::call('down');
-    return 'Application cache cleared';
-});
-
-
 
 
 Auth::routes();
