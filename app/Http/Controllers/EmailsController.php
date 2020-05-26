@@ -4,6 +4,7 @@ namespace guiaceliaca\Http\Controllers;
 
 use Brian2694\Toastr\Facades\Toastr;
 use guiaceliaca\Commerce;
+use guiaceliaca\Http\Requests\EmailContactSiteRequest;
 use guiaceliaca\Http\Requests\MessageClientToCommerceRequest;
 use guiaceliaca\Http\Requests\RespondCommerceToClientMessage;
 use guiaceliaca\Mail\MailClientContact;
@@ -34,7 +35,7 @@ class EmailsController extends Controller
         return back();
     }
 
-    public function MailContactToSite(Request $request)
+    public function MailContactToSite(EmailContactSiteRequest $request)
     {
         Mail::to('info@guiaceliaca.com.ar')->send(new MailClientContact($request));
 

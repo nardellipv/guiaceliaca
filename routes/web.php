@@ -14,6 +14,7 @@ Route::get('/down', function(){
 });
 
 
+
 Auth::routes();
 
 //web

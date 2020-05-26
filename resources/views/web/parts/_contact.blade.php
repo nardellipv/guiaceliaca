@@ -26,6 +26,7 @@
                                 <label for="messageText">Mensaje</label>
                                 <textarea class="margin-bottom form-control" rows="4" name="messageText" id="messageText" required></textarea>
                             </div>
+                            {!! Recaptcha::render() !!}
                         </div>
                         <input id="submit" name="submit" type="submit" value="Enviar" class="btn btn-default">
                     </form>
