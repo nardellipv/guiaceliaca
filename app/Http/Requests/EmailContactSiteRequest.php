@@ -27,7 +27,7 @@ class EmailContactSiteRequest extends FormRequest
             'name' => 'required',
             'email' => 'required | email',
             'subject' => 'required | min:10',
-            'g-recaptcha-response' =>  'required|recaptcha',
+            'g-recaptcha-response' => 'required|recaptchav3:contact,0.5'
         ];
     }
 }

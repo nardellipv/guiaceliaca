@@ -9,6 +9,7 @@
                     <p>Si tienes alguna pregunta, duda o sugerencia, por favor Contactanos</p>
                     <form method="post" action="{{ route('MailContactToSite') }}" class="form-large" role="form" data-toggle="validator">
                         @csrf
+                        {!! RecaptchaV3::field('contact') !!}
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <label for="name">Nombre</label>
@@ -26,7 +27,6 @@
                                 <label for="messageText">Mensaje</label>
                                 <textarea class="margin-bottom form-control" rows="4" name="messageText" id="messageText" required></textarea>
                             </div>
-                            {!! Recaptcha::render() !!}
                         </div>
                         <input id="submit" name="submit" type="submit" value="Enviar" class="btn btn-default">
                     </form>
