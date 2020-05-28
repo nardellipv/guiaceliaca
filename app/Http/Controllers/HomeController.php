@@ -52,24 +52,4 @@ class HomeController extends Controller
             'characteristics', 'payments', 'ratingVisit', 'ratingVote', 'device', 'commercesPro', 'commercesListed'));
     }
 
-    public function searchCommerce(Request $request)
-    {
-
-        if ($request->keywords) {
-            $searching = Commerce::with(['user'])
-                ->where('name', 'LIKE', "%$request->keywords%")
-                ->get();
-
-            return view('web.parts.searching._searchCommerce', compact('searching'));
-        }
-
-        if ($request->provinices) {
-            $searching = Commerce::with(['user'])
-                ->orWhere('province_id', $request->provinices)
-                ->get();
-
-            return view('web.parts.searching._searchCommerce', compact('searching'));
-        }
-
-    }
 }

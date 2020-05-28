@@ -42,7 +42,9 @@ Route::get('/recetas/{slug}', 'RecipeController@recipes')->name('recipes');
 Route::get('/recetas/like/{id}', 'RecipeController@recipeLike')->name('recipe.like');
 
 Route::post('/newsletter/add', 'NewsLetterController@add')->name('newsletter.add');
-Route::post('/busqueda', 'HomeController@searchCommerce')->name('search');
+
+Route::get('/filtro/provincia/{slug}', 'SearchController@filterProvince')->name('filter.province');
+Route::post('/filtro/comercio', 'SearchController@filterCommerce')->name('filter.commerce');
 
 
 //admin client

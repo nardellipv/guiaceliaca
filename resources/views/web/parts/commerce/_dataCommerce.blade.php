@@ -367,6 +367,4 @@
       "ratingCount" : "{{$commerce->votes_positive + $commerce->votes_negative}}"
     }
   }
-
-
 </script>

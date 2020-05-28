@@ -49,4 +49,21 @@
             </div>
         </div>
     @endforeach
+
+        <div class="section-title line-style">
+            <h3 class="title">Publicidad</h3>
+        </div>
+        <div class="recent-post">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- list Blog -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7543412924958320"
+                 data-ad-slot="8048058673"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 </div>

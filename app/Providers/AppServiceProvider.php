@@ -125,5 +125,17 @@ class AppServiceProvider extends ServiceProvider
                 ]);
             }
         });
+
+        //        contador de provincias
+        view::composer('web.parts.searching._asideSearching', function ($view) {
+            $countProvince = Commerce::with(['province'])
+                ->groupBy('province_id')
+                ->get();
+
+            $view->with([
+                'countProvince' => $countProvince,
+            ]);
+        });
+
     }
 }

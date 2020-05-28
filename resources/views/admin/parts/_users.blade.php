@@ -15,6 +15,7 @@
                 <th>Email</th>
                 <th class="min-tablet">Tipo</th>
                 <th class="min-tablet">Estado</th>
+                <th class="min-tablet">Fecha</th>
                 <th>Acción</th>
             </tr>
             </thead>
@@ -25,6 +26,7 @@
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->type }}</td>
                     <td>{{ $user->status }}</td>
+                    <td>{{ $user->created_at->format('d/m/Y') }}</td>
                     <td>
                         <a href="{{ route('admin.userEdit', $user) }}" class="btn btn-default btn-icon btn-circle icon-lg fa fa-user"></a>
                         @if($user->status == 'DESACTIVE')

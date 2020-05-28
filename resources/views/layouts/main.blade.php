@@ -76,8 +76,8 @@
 
     @include('external.analytics')
     {{--@include('external.hotjar')--}}
-    {{--@include('external.adsenses')--}}
-    {{--@include('external.pixel')--}}
+    @include('external.adsenses')
+    @include('external.pixel')
     {!! RecaptchaV3::initJs() !!}
 </head>
 <body class="fixed-header">

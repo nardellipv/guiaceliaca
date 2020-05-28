@@ -1,69 +1,76 @@
-<section id="recent-list">
+<section id="grid-content">
     <div class="container">
-        @if(!Request()->cookie('login'))
-            @include('web.parts._registerIndex')
-        @endif
-        <br>
         <div class="list-box-title">
             <span><i class="icon fa fa-plus-square"></i>Comercios</span>
         </div>
         <div class="row">
-            @foreach($commercesListed as $commerceList)
-                <div class="col-md-4">
-                    <div class="box-ads box-home">
-                        <a class="hover-effect image image-fill"
-                           href="{{ route('name.commerce', $commerceList->slug) }}">
-                            <span class="cover"></span>
-                            @if (!$commerceList->logo)
-                                <img alt="guía celiaca"
-                                     src="{{ asset('images/img-logo-grande.png') }}" class="img-responsive">
-                            @else
-                                <img alt="{{ $commerceList->name }}"
-                                     src="{{ asset('users/images/' . $commerceList->user->id . '/comercio/358x250-'. $commerceList->logo) }}">
-                            @endif
-                            <h3 class="title">{{ $commerceList->name }}</h3>
-                        </a>
-                        <span class="price"></span>
-                        <span class="address"><i
-                                    class="fa fa-map-marker"></i> {{--{{ $commerceList->region->name }}--}}
-                            {{ $commerceList->province->name }}</span>
-                        <span class="description">{{ Str::limit($commerceList->about, 40)  }}</span>
-                        <dl class="detail">
-                            <dt class="status">Visitas:</dt>
-                            <dd>{{ $commerceList->visit }}</dd>
-                            <dt class="area">Votos:</dt>
-                            <dd>
-                                @if($commerceList->votes_positive > 0)
-                                    <div class="progress-bar progress-bar-warning" role="progressbar"
-                                         aria-valuenow="60"
-                                         aria-valuemin="0" aria-valuemax="100"
-                                         style="width:{{($commerceList->votes_positive * 100)/ ($commerceList->votes_positive + $commerceList->votes_negative)}}%;height: 80%;">
-                                        {{round(($commerceList->votes_positive * 100)/ ($commerceList->votes_positive + $commerceList->votes_negative)),0}}
-                                        %
-                                    </div>
-                                @else
-                                    <div class="progress-bar progress-bar-warning" role="progressbar"
-                                         aria-valuenow="60"
-                                         aria-valuemin="0" aria-valuemax="100"
-                                         style="width:0%;height: 80%;">0%
-                                    </div>
-                                @endif
-                            </dd>
-                        </dl>
-                        <div class="footer">
-                            <a class="btn btn-reverse" href="{{ route('name.commerce', $commerceList->slug) }}"><i
-                                        class="fa fa-search"></i> Ir al negocio</a>
+            <div class="col-sm-8 col-md-9">
+                <div class="row">
+                    @foreach($commercesListed as $commerceList)
+                        <div class="col-sm-6 col-md-4">
+                            <div class="box-ads box-grid">
+                                <a class="hover-effect image image-fill"
+                                   href="{{ route('name.commerce', $commerceList->slug) }}">
+                                    <span class="cover"></span>
+                                    @if (!$commerceList->logo)
+                                        <img alt="guía celiaca"
+                                             src="{{ asset('images/img-logo-grande.png') }}" class="img-responsive">
+                                    @else
+                                        <img alt="{{ $commerceList->name }}"
+                                             src="{{ asset('users/images/' . $commerceList->user->id . '/comercio/358x250-'. $commerceList->logo) }}">
+                                    @endif
+                                    <h3 class="title">{{ $commerceList->name }}</h3>
+                                </a>
+                                <span class="price"></span>
+                                <span class="address"><i
+                                            class="fa fa-map-marker"></i> {{--{{ $commerceList->region->name }}--}}
+                                    {{ Str::limit($commerceList->province->name,20) }}</span>
+                                <span class="description">{{ Str::limit($commerceList->about, 40)  }}</span>
+                                <dl class="detail">
+                                    <dt class="status">Visitas:</dt>
+                                    <dd>{{ $commerceList->visit }}</dd>
+                                    <dt class="area">Votos:</dt>
+                                    <dd>
+                                        @if($commerceList->votes_positive > 0)
+                                            <div class="progress-bar progress-bar-warning" role="progressbar"
+                                                 aria-valuenow="60"
+                                                 aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:{{($commerceList->votes_positive * 100)/ ($commerceList->votes_positive + $commerceList->votes_negative)}}%;height: 80%;">
+                                                {{round(($commerceList->votes_positive * 100)/ ($commerceList->votes_positive + $commerceList->votes_negative)),0}}
+                                                %
+                                            </div>
+                                        @else
+                                            <div class="progress-bar progress-bar-warning" role="progressbar"
+                                                 aria-valuenow="60"
+                                                 aria-valuemin="0" aria-valuemax="100"
+                                                 style="width:0%;height: 80%;">0%
+                                            </div>
+                                        @endif
+                                    </dd>
+                                </dl>
+                                <div class="footer">
+                                    <a class="btn btn-reverse" href="{{ route('name.commerce', $commerceList->slug) }}"><i
+                                                class="fa fa-search"></i> Ir al negocio</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
-            @endforeach
-        </div>
-        <div class="pagination-content" align="center">
-            <ul class="pagination">
-                {{ $commercesListed->render() }}
-            </ul>
+            </div>
+            @include('web.parts.searching._asideSearching')
         </div>
     </div>
+
+    <div class="container" id="pagination">
+        <div class="row">
+            <div class="col-md-9">
+                <ul class="pagination">
+                    {{ $commercesListed->render() }}
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 {{--snipper--}}

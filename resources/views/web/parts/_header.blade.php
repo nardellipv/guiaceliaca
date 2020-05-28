@@ -17,7 +17,7 @@
             @endif
             @if(Auth::guest())
                 <div class="col-md-10 hidden-xs" id="login-pan">
-                    <a href="#" data-toggle="modal" data-target=".login-modal" data-section="sign-in"><i
+                    <a href="#" data-toggle="modal" data-target=".login-modal" class="btn btn-danger btn-lg" data-section="sign-in"><i
                                 class="icon fa fa-pencil-square-o"></i> Registrarse</a>
                     <a href="#" data-toggle="modal" data-target=".login-modal" data-section="login"><i
                                 class="icon fa fa-user user"></i> Ingresar</a>

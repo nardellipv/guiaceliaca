@@ -15,7 +15,6 @@
                                 <textarea placeholder="Mensaje" rows="5" class="form-control" name="messageText"
                                           id="text-message" required></textarea>
             </div>
-            {!! Recaptcha::render() !!}
             <button class="btn btn-default" type="submit">Enviar Mensaje</button>
         </form>
     </div>
