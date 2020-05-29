@@ -229,6 +229,7 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Toastr'  => Brian2694\Toastr\Facades\Toastr::class,
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
+        'MailTemplate' => Juanparati\Sendinblue\Facades\Template::class,
     ],
 
 ];

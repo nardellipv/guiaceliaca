@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee1f634bb246958c53ed893e5f705669",
+    "content-hash": "a68a96c6172d19846913f9f9d46f2f14",
     "packages": [
         {
             "name": "brian2694/laravel-toastr",
@@ -977,6 +977,59 @@
                 "recaptcha"
             ],
             "time": "2020-03-08T16:22:06+00:00"
+        },
+        {
+            "name": "juanparati/sendinblue",
+            "version": "2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/juanparati/Sendinblue.git",
+                "reference": "2febf96cdb341dd447599c89f2fa4425a60ef9f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/juanparati/Sendinblue/zipball/2febf96cdb341dd447599c89f2fa4425a60ef9f4",
+                "reference": "2febf96cdb341dd447599c89f2fa4425a60ef9f4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/mail": "5.5.*|5.6.*|5.7.*|5.8.*",
+                "sendinblue/api-v3-sdk": "~6.1.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~7.0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Juanparati\\Sendinblue\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Juanparati\\Sendinblue\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Juan Lago",
+                    "email": "juanparati@gmail.com"
+                }
+            ],
+            "description": "A Sendinblue v3 interface provider for Laravel 5.5+",
+            "keywords": [
+                "email",
+                "laravel",
+                "mail",
+                "sendinblue"
+            ],
+            "time": "2019-08-29T10:39:04+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2082,6 +2135,65 @@
                 "uuid"
             ],
             "time": "2020-02-21T04:36:14+00:00"
+        },
+        {
+            "name": "sendinblue/api-v3-sdk",
+            "version": "v6.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sendinblue/APIv3-php-library.git",
+                "reference": "986eac4a2732b2cbfea11e88e7c863457f023565"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sendinblue/APIv3-php-library/zipball/986eac4a2732b2cbfea11e88e7c863457f023565",
+                "reference": "986eac4a2732b2cbfea11e88e7c863457f023565",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^6.2",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~1.12",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "~2.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SendinBlue\\Client\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "SendinBlue Developers",
+                    "email": "contact@sendinblue.com",
+                    "homepage": "https://www.sendinblue.com/"
+                }
+            ],
+            "description": "Official SendinBlue provided RESTFul API V3 php library",
+            "homepage": "https://github.com/sendinblue/APIv3-php-library",
+            "keywords": [
+                "api",
+                "php",
+                "sdk",
+                "sendinblue",
+                "swagger"
+            ],
+            "time": "2019-05-27T10:17:08+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

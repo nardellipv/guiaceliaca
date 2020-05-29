@@ -44,4 +44,10 @@ return [
         ],
     ],
 
+    'sendinblue' => [
+        'v3'    => [
+            'key'   => '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'
+        ]
+    ],
+
 ];

@@ -14,6 +14,7 @@
         "intervention/image": "^2.5",
         "jenssegers/agent": "^2.6",
         "josiasmontag/laravel-recaptchav3": "^0.4.0",
+        "juanparati/sendinblue": "^2.4",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0"
     },
