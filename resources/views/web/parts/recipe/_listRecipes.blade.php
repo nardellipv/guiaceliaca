@@ -8,13 +8,13 @@
 @section('content')
     <section id="grid-content" style="margin-top: 10%;">
         <div class="container">
+            @if(!Request()->cookie('login'))
+                @include('web.parts._registerIndex')
+            @endif
+            <br>
             <div class="row">
                 <div class="col-sm-8 col-md-9">
                     <div class="row">
-                        @if(!Request()->cookie('login'))
-                            @include('web.parts._registerIndex')
-                        @endif
-                        <br>
                         @foreach($recipes as $recipe)
                             <div class="col-sm-6 col-md-4">
                                 <div class="box-ads box-grid">

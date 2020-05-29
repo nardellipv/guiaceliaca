@@ -25,7 +25,7 @@
                                 <span class="address"><i
                                             class="fa fa-map-marker"></i> {{--{{ $commerceList->region->name }}--}}
                                     {{ Str::limit($commerceList->province->name,20) }}</span>
-                                <span class="description">{{ Str::limit($commerceList->about, 40)  }}</span>
+                                <span class="description">{{ Str::limit($commerceList->about, 140)  }}</span>
                                 <dl class="detail">
                                     <dt class="status">Visitas:</dt>
                                     <dd>{{ $commerceList->visit }}</dd>

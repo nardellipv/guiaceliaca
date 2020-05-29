@@ -8,27 +8,34 @@
     <section id="blog">
 
         <div class="container">
+            @if(!Request()->cookie('login'))
+                @include('web.parts._registerIndex')
+            @endif
+            <br>
+
             <div class="row">
                 <div class="col-md-9">
                     @foreach($posts as $post)
-                    <div class="row blog-list">
-                        <div class="col-md-5">
-                            <div class="social">
+                        <div class="row blog-list">
+                            <div class="col-md-5">
+                                <div class="social">
                                     <span class="date">{{ $post->created_at->format('d') }}
                                         <span>{{ $post->created_at->format('M') }}</span></span>
-                                <a href="#"><i class="fa fa-heart-o"></i><span>{{ $post->like }}</span></a>
-                                <a href="#"><i class="fa fa-eye"></i><span>{{ $post->view }}</span></a>
+                                    <a href="#"><i class="fa fa-heart-o"></i><span>{{ $post->like }}</span></a>
+                                    <a href="#"><i class="fa fa-eye"></i><span>{{ $post->view }}</span></a>
+                                </div>
+                                <div class="image image-fill">
+                                    <img src="{{ asset('blog/images/360x239-' .$post->photo) }}"
+                                         alt="{{ $post->title }}" title="{{ $post->title }}"/>
+                                </div>
                             </div>
-                            <div class="image image-fill">
-                                <img src="{{ asset('blog/images/360x239-' .$post->photo) }}" alt="{{ $post->title }}" title="{{ $post->title }}"/>
+                            <div class="col-md-7">
+                                <h2 class="title"><a href="{{ url('blog', $post->slug) }}">{{ $post->title }}</a></h2>
+                                <div class="text">{!! Str::limit($post->body,300) !!}</div>
+                                <a href="{{ url('blog', $post->slug) }}" type="button" class="btn btn-default">Leer
+                                    más</a>
                             </div>
                         </div>
-                        <div class="col-md-7">
-                            <h2 class="title"><a href="{{ url('blog', $post->slug) }}">{{ $post->title }}</a></h2>
-                            <div class="text">{!! Str::limit($post->body,300) !!}</div>
-                            <a href="{{ url('blog', $post->slug) }}" type="button" class="btn btn-default">Leer más</a>
-                        </div>
-                    </div>
                     @endforeach
                 </div>
                 @include('web.parts.blog._asideBlog')
@@ -46,3 +53,4 @@
         </div>
     </section>
 @endsection
+

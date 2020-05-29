@@ -81,6 +81,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/perfil/pago/eliminar/{id}', 'AdminClient\ProfileCommerceController@deletePayment')->name('delete.payment');
 
     Route::post('/comentario-blog/{id}', 'BlogController@commentPost')->name('comment.post');
+
+    Route::get('/promocion/listado', 'PromotionController@listPromotion')->name('list.promotion');
 });
 
 //Admin Root
