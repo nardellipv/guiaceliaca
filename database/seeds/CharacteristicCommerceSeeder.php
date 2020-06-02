@@ -11,6 +11,6 @@ class CharacteristicCommerceSeeder extends Seeder
      */
     public function run()
     {
-        factory(\guiaceliaca\CharacteristicCommerce::class, 10)->create();
+        factory(\guiaceliaca\CharacteristicCommerce::class, 2)->create();
     }
 }

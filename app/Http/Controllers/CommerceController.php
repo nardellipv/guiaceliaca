@@ -8,6 +8,7 @@ use guiaceliaca\Comment;
 use guiaceliaca\Commerce;
 use guiaceliaca\PaymentCommerce;
 use guiaceliaca\Product;
+use guiaceliaca\Promotion;
 use Illuminate\Support\Facades\Cookie;
 
 class CommerceController extends Controller
@@ -43,8 +44,12 @@ class CommerceController extends Controller
             ->orderBy('created_at', 'DESC')
             ->paginate(5);
 
+        $promotions = Promotion::where('commerce_id', $commerce->id)
+            ->where('end_date', '>=', today())
+            ->get();
+
         Return view('web.parts.commerce._dataCommerce', compact('commerce', 'totalVisit',
-            'characteristics', 'payments', 'products', 'comments'));
+            'characteristics', 'payments', 'products', 'comments', 'promotions'));
     }
 
     public function positive($slug)
@@ -93,7 +98,7 @@ class CommerceController extends Controller
             ->where('slug', $slug)
             ->first();
 
-        $products = Product::with(['commerce','category'])
+        $products = Product::with(['commerce', 'category'])
             ->where('commerce_id', $commerce->id)
             ->get();
 

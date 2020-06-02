@@ -300,6 +300,40 @@
                                 </div>
                             @endif
 
+
+                            <div class="section-title line-style line-style">
+                                <h3 class="title">Promociones</h3>
+                            </div>
+                            @if(count($promotions) > 0)
+                                <div class="details">
+                                    <div class="row">
+                                        @foreach($promotions as $promotion)
+                                            <div class="col-sm-4 col-xs-6">
+                                            <span class="detail">
+                                                <a href="{{ asset('users/images/' . $commerce->user->id . '/voucher/' . $promotion->percentage .'-'. $promotion->end_date .'.jpg') }}"
+                                                   target="_blank" >
+                                                    <img alt="{{ $promotion->name }}"
+                                                         src="{{ asset('users/images/' . $commerce->user->id . '/voucher/'. $promotion->percentage . '-' . $promotion->end_date . '.jpg') }}"
+                                                         class="img-responsive">
+                                                </a>
+                                                <p>
+                                                {{ Str::limit($promotion->name, 15) }}
+                                                </p>
+                                            </span>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            @else
+                                <div class="details">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-xs-6">
+                                            <h5>El comercio no publico ninguna promoción.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+
                             <div id="ubicacion" class="section-title line-style">
                                 <h3 class="title">Comentarios</h3>
                             </div>
@@ -367,4 +401,5 @@
       "ratingCount" : "{{$commerce->votes_positive + $commerce->votes_negative}}"
     }
   }
+
 </script>

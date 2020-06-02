@@ -38,6 +38,11 @@ class Commerce extends Model
         return $this->hasMany(Payment::class);
     }
 
+    public function Promotion()
+    {
+        return $this->hasMany(Promotion::class);
+    }
+
 
     public function Characteristic()
     {

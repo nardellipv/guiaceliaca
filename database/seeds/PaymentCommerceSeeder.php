@@ -12,6 +12,6 @@ class PaymentCommerceSeeder extends Seeder
      */
     public function run()
     {
-        factory(PaymentCommerce::class, 10)->create();
+        factory(PaymentCommerce::class, 2)->create();
     }
 }

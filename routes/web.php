@@ -82,7 +82,10 @@ Route::middleware(['auth'])->group(function () {
 
     Route::post('/comentario-blog/{id}', 'BlogController@commentPost')->name('comment.post');
 
-    Route::get('/promocion/listado', 'PromotionController@listPromotion')->name('list.promotion');
+    Route::get('/promocion/listar', 'AdminClient\PromotionController@listPromotion')->name('list.promotion');
+    Route::get('/promocion/crear', 'AdminClient\PromotionController@createPromotion')->name('create.promotion');
+    Route::post('/promocion/crear/agregar', 'AdminClient\PromotionController@storePromotion')->name('store.promotion');
+    Route::get('/promocion/borrar/{id}', 'AdminClient\PromotionController@deletePromotion')->name('delete.promotion');
 });
 
 //Admin Root

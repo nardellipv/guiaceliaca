@@ -18,7 +18,7 @@
                 <p style="margin: 5% 25% -10% 25%;">Cuenta Comercio</p>
             @else
                 <a href="{{ route('create.accountCommerce') }}" type="button" class="btn btn-danger btn-lg btn-block"
-                   >Crear
+                >Crear
                     Cuenta Comercio</a>
             @endif
         </div>
@@ -35,8 +35,12 @@
                     Perfíl Comercial</a></li>
             <li><a class="faq-button {{ request()->routeIs('product.index') ? 'active' : '' }}"
                    href="{{ route('product.index') }}"><i
-                            class="icon fa fa-barcode"></i>
+                            class="icon fa fa-cart-plus"></i>
                     Productos</a></li>
+            <li><a class="faq-button {{ request()->routeIs('create.promotion') ? 'active' : '' }}"
+                   href="{{ route('create.promotion') }}"><i
+                            class="icon fa fa-ticket"></i>
+                    Promociones </a></li>
             <li><a class="faq-button {{ request()->routeIs('message.list') ? 'active' : '' }}"
                    href="{{ route('message.list') }}"><i
                             class="icon fa fa-envelope-o"></i>

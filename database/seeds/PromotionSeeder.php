@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class UserSeeder extends Seeder
+class PromotionSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        factory(\guiaceliaca\User::class, 20)->create();
+        factory(\guiaceliaca\Promotion::class, 20)->create();
     }
 }
