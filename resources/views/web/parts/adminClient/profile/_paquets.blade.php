@@ -23,7 +23,7 @@
 										<span class="sub-title">Exposición Normal</span>
 										<span class="cover"></span>
 									</span>
-            <div class="price">$ 199<small>/Mes</small></div>
+            <div class="price">$ 399<small>/Mes</small></div>
             <input class="btn btn-default select-button" name="type" value="BASIC" type="radio" {{ $commerce->type == 'BASIC' ? 'checked' : '' }}>
         </div><!-- /.pricing -->
     </div>
@@ -34,7 +34,7 @@
 										<span class="sub-title">Exposición Alta</span>
 										<span class="cover"></span>
 									</span>
-            <div class="price">$ 399<small>/Mes</small></div>
+            <div class="price">$ 745<small>/Mes</small></div>
             <input class="btn btn-default select-button" name="type" value="CLASIC"
                    type="radio" {{ $commerce->type == 'CLASIC' ? 'checked' : '' }}>
         </div><!-- /.pricing -->

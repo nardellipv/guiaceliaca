@@ -91,8 +91,6 @@
                                 <h3 class="title">Dejar comentario</h3>
                             </div>
                             @if(Auth::check())
-                                {{--hacer--}}
-                                {{--probar cuando este logueado--}}
                                 <form method="post" action="{{ route('add.commentCommerce', $commerce->slug) }}"
                                       class="form-large grey-color" role="form"
                                       data-toggle="validator">

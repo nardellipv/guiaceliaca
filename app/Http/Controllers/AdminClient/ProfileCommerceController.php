@@ -35,6 +35,15 @@ class ProfileCommerceController extends Controller
 
             $lastMessages = Message::where('commerce_id', $commerceId->id)
                 ->get();
+
+            //se utiliza para mostrar mensaje de upgrade
+            if($commerceId->type == 'FREE') {
+                Cookie::queue('owner', 'ingresoOwner', '2628000');
+            }else{
+//                dd('entro');
+                Cookie::queue(Cookie()->forget('owner','ingresoOwner'));
+            }
+
         }
 
         $lastBlog = Blog::orderBy('created_at', 'DESC')

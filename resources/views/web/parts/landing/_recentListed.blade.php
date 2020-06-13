@@ -4,6 +4,15 @@
             @include('web.parts._registerIndex')
         @endif
         <br>
+
+        @if(Request()->cookie('owner'))
+            <div class="row">
+                <div class="col-md-6 col-lg-offset-3">
+                    @include('web.parts._upgrade')
+                </div>
+            </div>
+        @endif
+
         <div class="list-box-title">
             <span><i class="icon fa fa-plus-square"></i>Recientemente Agregadas</span>
         </div>

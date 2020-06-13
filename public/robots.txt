@@ -1,11 +1,11 @@
-User-Agent: *
-Disallow: 
-Disallow: /contacto
-Disallow: /terminos
-Disallow: /privacidad
-Disallow: /register
-Disallow: /login
-Disallow: /perfil/
-Disallow: /admin/
-Disallow: /perfil/*
+User-Agent: *
+Disallow: 
+Disallow: /contacto
+Disallow: /terminos
+Disallow: /privacidad
+Disallow: /register
+Disallow: /login
+Disallow: /perfil/
+Disallow: /admin/
+Disallow: /perfil/*
 Disallow: /admin/*

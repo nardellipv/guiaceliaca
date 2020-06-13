@@ -26,6 +26,11 @@
                                 Clásico</a></li>
                         <li><a class="faq-button" href="#selling"><i class="icon fa fa-caret-right"></i> Paquete Premium</a>
                         </li>
+                        <li><a class="faq-button" href="#price"><i class="icon fa fa-caret-right"></i> Precios</a>
+                        </li>
+                        <li><a class="faq-button" href="#choose"><i class="icon fa fa-caret-right"></i> ¿Comó
+                                seleccionar un paquete?</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-sm-9">
@@ -75,7 +80,8 @@
                                 <p>Su local aparecerá además de mostrarse en el listado de Recientemente Agregados, en
                                     el costado
                                     derecho de la lista de recetas.</p>
-                                <img src="{{ asset('style/images/faqPackets/basicRecipe.png') }}" class="img-responsive">
+                                <img src="{{ asset('style/images/faqPackets/basicRecipe.png') }}"
+                                     class="img-responsive">
                             </div>
                         </div>
                         <div class="accordion-box">
@@ -94,8 +100,10 @@
                             <div class="text-container" id="acc-10">
                                 <p>Su local aparecerá además de mostrarse en el listado de Recientemente Agregados, en
                                     el costado derecho de los las noticias de nuestro blog y dentro de cada noticia.</p>
-                                <img src="{{ asset('style/images/faqPackets/clasicAsidePost.png') }}" class="img-responsive">
-                                <img src="{{ asset('style/images/faqPackets/clasicListBlog.png') }}" class="img-responsive">
+                                <img src="{{ asset('style/images/faqPackets/clasicAsidePost.png') }}"
+                                     class="img-responsive">
+                                <img src="{{ asset('style/images/faqPackets/clasicListBlog.png') }}"
+                                     class="img-responsive">
                             </div>
                         </div>
                         <div class="accordion-box">
@@ -117,8 +125,10 @@
                                     en la pagina principal, también aparecera en la seccion de recomendados por arriba
                                     del listado de todos los locales, en el perfíl de los clientes y en el costado
                                     derecho de cada receta.</p>
-                                <img src="{{ asset('style/images/faqPackets/premiumHome.png') }}" class="img-responsive">
-                                <img src="{{ asset('style/images/faqPackets/premiumProfileClient.png') }}" class="img-responsive">
+                                <img src="{{ asset('style/images/faqPackets/premiumHome.png') }}"
+                                     class="img-responsive">
+                                <img src="{{ asset('style/images/faqPackets/premiumProfileClient.png') }}"
+                                     class="img-responsive">
                             </div>
                         </div>
                         <div class="accordion-box">
@@ -139,6 +149,88 @@
                             </div>
                         </div>
                     </div>
+
+                    <h2>Precios</h2>
+                    <div class="faq-container accordion" id="price">
+                        <div id="pricing-box" class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="pricing hover-effect">
+									<span class="header">
+										<span class="title">FREE</span>
+										<span class="sub-title">Exposición Baja</span>
+										<span class="cover"></span>
+									</span>
+                                    <div class="price">$ 0,00</div>
+                                </div><!-- /.pricing -->
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="pricing hover-effect">
+									<span class="header">
+										<span class="title">Básica</span>
+										<span class="sub-title">Exposición Normal</span>
+										<span class="cover"></span>
+									</span>
+                                    <div class="price">$ 399
+                                        <small>/Mes</small>
+                                    </div>
+                                </div><!-- /.pricing -->
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="pricing hover-effect">
+									<span class="header">
+										<span class="title">Clásica</span>
+										<span class="sub-title">Exposición Alta</span>
+										<span class="cover"></span>
+									</span>
+                                    <div class="price">$ 745
+                                        <small>/Mes</small>
+                                    </div>
+                                </div><!-- /.pricing -->
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                <div class="pricing hover-effect">
+									<span class="header">
+										<span class="title">Premium</span>
+										<span class="sub-title">Alta Exposición + Sitio web</span>
+										<span class="cover"></span>
+									</span>
+                                    <div class="price">Consultar</div>
+                                </div><!-- /.pricing -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Seleccionar un paquete</h2>
+                    <div class="faq-container accordion" id="choose">
+                        <div class="table-responsive description">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td colspan="2">Ingrese a su cuenta desde el botón "Ingresar", esquina superior derecha.</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td colspan="2">En el menú de su perfil, seleccione "Perfil comercial".</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td colspan="2">Seleccione una de las opciones.</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td colspan="2">Precione el botón "Modificar Comercio".</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td colspan="2">Un representante se estará comunicando con usted.</td>
+                                </tr>
+                                </tbody>
+                            </table><!-- /.table -->
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>

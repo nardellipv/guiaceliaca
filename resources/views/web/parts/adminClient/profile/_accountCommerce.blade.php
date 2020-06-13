@@ -15,6 +15,11 @@
                                     desde una computadora y no desde su móvil o tablet.
                                 </div>
                             @endif
+
+                            @if(Request()->cookie('owner'))
+                                @include('web.parts._upgrade')
+                            @endif
+
                             <div class="section-title line-style no-margin">
                                 <h3 class="title">Información General</h3>
                             </div>
@@ -160,11 +165,13 @@
                                 @foreach($commercesPro as $commercePro)
                                     <div class="logs">
                                         <div class="box-ads box-grid mini">
-                                            <a class="hover-effect image image-fill" href="{{ route('name.commerce', $commercePro->slug) }}">
+                                            <a class="hover-effect image image-fill"
+                                               href="{{ route('name.commerce', $commercePro->slug) }}">
                                                 <span class="cover"></span>
                                                 @if (!$commercePro->logo)
                                                     <img alt="guía celiaca"
-                                                         src="{{ asset('images/img-logo-grande.png') }}" class="img-responsive">
+                                                         src="{{ asset('images/img-logo-grande.png') }}"
+                                                         class="img-responsive">
                                                 @else
                                                     <img alt="{{ $commercePro->name }}"
                                                          src="{{ asset('users/images/' . $commercePro->user->id . '/comercio/358x250-'. $commercePro->logo) }}">

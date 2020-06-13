@@ -11,6 +11,14 @@
             @if(!Request()->cookie('login'))
                 @include('web.parts._registerIndex')
             @endif
+
+            @if(Request()->cookie('owner'))
+                <div class="row">
+                    <div class="col-md-6 col-lg-offset-3">
+                        @include('web.parts._upgrade')
+                    </div>
+                </div>
+            @endif
             <br>
 
             <div class="row">

@@ -26,8 +26,6 @@
     </div>
     <h3 class="title-form"><i class="icon fa fa-comment"></i> Comentar noticia</h3>
     @if(Auth::check())
-        {{--hacer--}}
-        {{--probar cuando este logueado--}}
         <form method="post" action="{{ route('comment.post', $post->id) }}"
               class="form-large grey-color" role="form"
               data-toggle="validator">

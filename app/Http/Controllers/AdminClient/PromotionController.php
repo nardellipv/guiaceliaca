@@ -38,6 +38,7 @@ class PromotionController extends Controller
 
         $img = Image::make('images/ticket.jpg');
 
+        //hacer - cuando se suba al hosting quitar public_path
         $img->text($request->name, 200, 45, function ($font) {
             $font->file(public_path('style/font/sixty.TTF'));
 
@@ -64,18 +65,20 @@ class PromotionController extends Controller
 
         });
 
-        $img->text($request->percentage . '%', 200, 145, function ($font) {
-            $font->file(public_path('style/font/stereofidelic.ttf'));
+        if($request->percentage != NULL) {
+            $img->text($request->percentage . '%', 200, 145, function ($font) {
+                $font->file(public_path('style/font/stereofidelic.ttf'));
 
-            $font->size(60);
+                $font->size(60);
 
-            $font->color('#fff000');
+                $font->color('#fff000');
 
-            $font->align('center');
+                $font->align('center');
 
-            $font->angle(0);
+                $font->angle(0);
 
-        });
+            });
+        }
 
         $img->text("Válida " . Carbon::parse($request->end_date)->format('d/m/Y'), 150, 175, function ($font) {
             $font->file(public_path('style/font/yellow.otf'));
