@@ -1,6 +1,7 @@
 <?php
 //Artisan::call('up');
 //cleaning
+
 Route::get('/clear', function() {
     \Artisan::call('config:clear');
     \Artisan::call('cache:clear');
@@ -106,6 +107,11 @@ Route::middleware(['auth','UserType'])->group(function () {
 
     Route::get('/admin/newsletter', 'Admin\AdminNewsLetterController@listNewsLetter')->name('admin.listNewsLetter');
     Route::get('/admin/newsletter/delete/{id}', 'Admin\AdminNewsLetterController@deleteNewsLetter')->name('admin.deleteNewsLetter');
+
+    Route::get('/admin/export-all-users', 'Admin\ExportController@exportAllUsers')->name('admin.exportAllUsers');
+    Route::get('/admin/export-newsletter-users', 'Admin\ExportController@exportNewsLetterUsers')->name('admin.exportNewsLetterUsers');
+    Route::get('/admin/export-client-users', 'Admin\ExportController@exportClientUsers')->name('admin.exportClientUsers');
+    Route::get('/admin/export-owner-users', 'Admin\ExportController@exportOwnerUsers')->name('admin.exportOwnerUsers');
 });
 
 

@@ -167,6 +167,7 @@ return [
          */
         Intervention\Image\ImageServiceProvider::class,
         Jenssegers\Agent\AgentServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -230,6 +231,7 @@ return [
         'Toastr'  => Brian2694\Toastr\Facades\Toastr::class,
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
         'MailTemplate' => Juanparati\Sendinblue\Facades\Template::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
 ];

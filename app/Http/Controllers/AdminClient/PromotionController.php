@@ -38,9 +38,8 @@ class PromotionController extends Controller
 
         $img = Image::make('images/ticket.jpg');
 
-        //hacer - cuando se suba al hosting quitar public_path
         $img->text($request->name, 200, 45, function ($font) {
-            $font->file(public_path('style/font/sixty.TTF'));
+            $font->file('style/font/sixty.TTF');
 
             $font->size(35);
 
@@ -53,7 +52,7 @@ class PromotionController extends Controller
         });
 
         $img->text($request->text, 190, 75, function ($font) {
-            $font->file(public_path('style/font/sixty.TTF'));
+            $font->file('style/font/sixty.TTF');
 
             $font->size(20);
 
@@ -67,7 +66,7 @@ class PromotionController extends Controller
 
         if($request->percentage != NULL) {
             $img->text($request->percentage . '%', 200, 145, function ($font) {
-                $font->file(public_path('style/font/stereofidelic.ttf'));
+                $font->file('style/font/stereofidelic.ttf');
 
                 $font->size(60);
 
@@ -81,7 +80,7 @@ class PromotionController extends Controller
         }
 
         $img->text("Válida " . Carbon::parse($request->end_date)->format('d/m/Y'), 150, 175, function ($font) {
-            $font->file(public_path('style/font/yellow.otf'));
+            $font->file('style/font/yellow.otf');
 
             $font->size(20);
 
@@ -104,7 +103,7 @@ class PromotionController extends Controller
         }
 
         $picture = $request->percentage . '-' . $request->end_date;
-        $img->save(public_path($pathSub . '/' . $picture . '.jpg'));
+        $img->save($pathSub . '/' . $picture . '.jpg');
 
         $imageID = Picture::create([
             'name' => $picture . '.jpg',

@@ -137,7 +137,7 @@ class JobSiteController extends Controller
 
     public function missYou()
     {
-        $users = User::where('lastLogin','<=', Date::parse('-15days'))
+        $users = User::where('lastLogin','<=', Date::parse('-30days'))
             ->get();
 
         foreach ($users as $user){
