@@ -168,6 +168,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Jenssegers\Agent\AgentServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
+        SantiGraviano\LaravelMercadoPago\Providers\MercadoPagoServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -232,6 +233,7 @@ return [
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
         'MailTemplate' => Juanparati\Sendinblue\Facades\Template::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+        'MP' => SantiGraviano\LaravelMercadoPago\Facades\MP::class,
     ],
 
 ];

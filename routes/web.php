@@ -26,6 +26,9 @@ Route::view('/contacto', 'web.parts._contact')->name('contact');
 Route::view('/terminos', 'web.parts._term')->name('term');
 
 Route::view('/privacidad', 'web.parts._policity')->name('policity');
+Route::view('/pago-exitoso', 'web.parts._successPay')->name('pay.success');
+Route::view('/pago-pendiente', 'web.parts._pendingPay')->name('pay.pending');
+Route::view('/pago-erroneo', 'web.parts._errorPay')->name('pay.error');
 
 Route::view('/ayuda-paquetes', 'web.parts.adminClient.profile._FAQPackets')->name('faq.packets');
 

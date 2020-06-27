@@ -1,5 +1,6 @@
 <?php
 
+use guiaceliaca\Prices;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -25,5 +26,6 @@ class DatabaseSeeder extends Seeder
 //        $this->call(NewsLetterSeeder::class);
 //        $this->call(CommentBlogSeeder::class);
 //        $this->call(PromotionSeeder::class);
+        $this->call(Prices::class);
     }
 }

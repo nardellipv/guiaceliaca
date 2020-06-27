@@ -4,6 +4,7 @@
 <p><strong>Nombre Comercio:</strong> {{ $commerce->name }}</p>
 <p><strong>Teléfono Comercio:</strong> {{ $commerce->phone }}</p>
 <p><strong>EMail:&nbsp;</strong> {{ $commerce->user->email }}</p>
+<p><strong>Cuenta:</strong> {{ $account->name }}</p>
 <p>Saludos,&nbsp;</p>
 <p>Gu&iacute;a Cel&iacute;aca</p>
 <hr />

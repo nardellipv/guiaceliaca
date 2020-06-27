@@ -24,7 +24,7 @@
 										<span class="cover"></span>
 									</span>
             <div class="price">$ 399<small>/Mes</small></div>
-            <input class="btn btn-default select-button" name="type" value="BASIC" type="radio" {{ $commerce->type == 'BASIC' ? 'checked' : '' }}>
+            <input class="btn btn-default select-button" name="type" value="Basic" type="radio" {{ $commerce->type == 'BASIC' ? 'checked' : '' }}>
         </div><!-- /.pricing -->
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6">
@@ -35,7 +35,7 @@
 										<span class="cover"></span>
 									</span>
             <div class="price">$ 745<small>/Mes</small></div>
-            <input class="btn btn-default select-button" name="type" value="CLASIC"
+            <input class="btn btn-default select-button" name="type" value="Clasic"
                    type="radio" {{ $commerce->type == 'CLASIC' ? 'checked' : '' }}>
         </div><!-- /.pricing -->
     </div>
@@ -47,7 +47,7 @@
 										<span class="cover"></span>
 									</span>
             <div class="price">Consultar</div>
-            <input class="btn btn-default select-button" name="type" value="PREMIUM"
+            <input class="btn btn-default select-button" name="type" value="Premium"
                    type="radio" {{ $commerce->type == 'PREMIUM' ? 'checked' : '' }}>
         </div><!-- /.pricing -->
     </div>

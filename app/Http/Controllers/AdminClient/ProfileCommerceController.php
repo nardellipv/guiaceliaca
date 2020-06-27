@@ -13,6 +13,7 @@ use guiaceliaca\Message;
 use guiaceliaca\Payment;
 use guiaceliaca\PaymentCommerce;
 use guiaceliaca\Picture;
+use guiaceliaca\Prices;
 use guiaceliaca\Province;
 use guiaceliaca\User;
 use Illuminate\Http\Request;
@@ -21,8 +22,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
 use Image;
+use MP;
 
 class ProfileCommerceController extends Controller
 {
@@ -37,11 +40,11 @@ class ProfileCommerceController extends Controller
                 ->get();
 
             //se utiliza para mostrar mensaje de upgrade
-            if($commerceId->type == 'FREE') {
+            if ($commerceId->type == 'FREE') {
                 Cookie::queue('owner', 'ingresoOwner', '2628000');
-            }else{
+            } else {
 //                dd('entro');
-                Cookie::queue(Cookie()->forget('owner','ingresoOwner'));
+                Cookie::queue(Cookie()->forget('owner', 'ingresoOwner'));
             }
 
         }
@@ -55,7 +58,7 @@ class ProfileCommerceController extends Controller
             ->get();
 
 
-        if(!Cookie::get('lastLogin')) {
+        if (!Cookie::get('lastLogin')) {
             $lastLogin = User::find(Auth::user()->id);
             $lastLogin->lastLogin = now();
             $lastLogin->save();
@@ -255,13 +258,15 @@ class ProfileCommerceController extends Controller
 
     public function updateAccountCommerceCommerce(CreateProfileCommerceRequest $request, $id)
     {
-
         $commerce = Commerce::find($id);
 
+        $priceType = Prices::where('name', $request->type)
+            ->first();
+
 //        verifico si cambio el tipo de cuenta
-        if($commerce->type != $request->type){
+        if ($commerce->type != $request->type) {
             $typeCommerce = 1;
-        }else{
+        } else {
             $typeCommerce = 0;
         }
 
@@ -329,20 +334,61 @@ class ProfileCommerceController extends Controller
 
         $commerce->save();
 
-        if($typeCommerce == 0) {
+
+//        Si elige o free o premium nos contactamos con el cliente
+        if ($commerce->type == 'FREE') {
             Toastr::success('Perfil actualizado correctamente.', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
             return back();
-        }else {
-            Toastr::success('Perfil actualizado correctamente.', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
-            Toastr::info('Nos comunicaremos con usted por el cambio de cuenta.', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
+        } elseif ($commerce->type == 'Premium') {
 
-            Mail::send('emails.MailChangeTypeAccount', ['commerce' => $commerce], function ($msj) use ($commerce) {
+            Mail::send('emails.MailChangeTypeAccount', ['commerce' => $commerce, 'account' => $priceType], function ($msj) use ($commerce, $priceType) {
                 $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
                 $msj->subject('Cambio de cuenta');
                 $msj->to('nardellipv@gmail.com');
             });
 
+            Toastr::success('Perfil actualizado correctamente. Nos estaremos contactando a la brevedad.', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
             return back();
+        }
+
+        if ($typeCommerce == 0) {
+            Toastr::success('Perfil actualizado correctamente.', '', ["positionClass" => "toast-top-right", "progressBar" => "true"]);
+            return back();
+        } else {
+
+            Mail::send('emails.MailChangeTypeAccount', ['commerce' => $commerce, 'account' => $priceType], function ($msj) use ($commerce, $priceType) {
+                $msj->from('no-responder@guiaceliaca.com.ar', 'GuiaCeliaca');
+                $msj->subject('Cambio de cuenta');
+                $msj->to('nardellipv@gmail.com');
+            });
+
+
+            $preferenceData = [
+                'items' => [
+                    [
+                        'category_id' => 'upgrade',
+                        'title' => $request->type,
+                        'description' => 'Se realiza un upgrade a la cuenta del usuario',
+                        'quantity' => 1,
+                        'currency_id' => 'ARS',
+                        'unit_price' => $priceType->price
+                    ]
+                ],
+                "payer" => [
+                    "name" => $commerce->user->name,
+                    "surname" => $commerce->user->lastname,
+                    "email" => $commerce->user->email,
+                ],
+                "back_urls" => [
+                    "success" => route('pay.success'),
+                    "pending" => route('pay.pending'),
+                    "failure" => route('pay.error'),
+                ]
+            ];
+
+            $preference = MP::create_preference($preferenceData);
+
+            return Redirect::to($preference['response']['init_point']);
         }
     }
 
